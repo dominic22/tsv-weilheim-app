@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Red"
+    android:orientation="vertical"
+   
+    android:gravity="center"
+     >
+
+    
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="230px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo" 
+        android:scaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_weight="3"
+        android:weightSum="2"
+        
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#222222"
+                android:gravity="left|center"
+                android:textColor="@color/White"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/news96" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="Aktuelles"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/White" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnTeams"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#333333"
+                android:textColor="@color/White"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/team96" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:text="Mannschaften"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/White" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+       android:layout_weight="3"
+       android:weightSum="2"
+ 
+        android:orientation="horizontal" >
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnOrga"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#444444"
+                android:gravity="left|center"
+                android:textColor="@color/White"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/organisation96" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organisation"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+      <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btnImpressum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:background="#555555"
+                android:textColor="@color/White"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/impressum" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Impressum"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/Red">
+            
+    </LinearLayout>
+</LinearLayout>

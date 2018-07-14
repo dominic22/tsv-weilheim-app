@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- string ids for registration.xml -->
+    <string name="app_name">TSV Weilheim</string>
+    <string name="username_textview">Username:</string>
+    <string name="password_textview">Password:</string>
+    <string name="submit">Submit</string>
+
+    <!-- string ids for home.xml -->
+    <string name="post_comment">Post Comment</string>
+    <string name="read_comments_title">Recent Comments</string>
+    <string name="passwords_not_same">Passwords don\'t match</string>
+    <string name="title_activity_menu">TSV Weilheim</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_teams">TSV Weilheim - Teams</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_uebersicht">UebersichtActivity</string>
+    <string name="title_activity_parse_xml">ParseXMLActivity</string>
+    <string name="title_activity_xmldemo">XMLDemo</string>
+    <string name="title_activity_main_switcher">MainSwitcherActivity</string>
+    <string name="vorstandtext"><b>Sportliche Leitung</b>\nRoland Bendl (links)\n\n<b>Wirtschaftsvorstand</b>Florian Mauch (mitte)
+        \n\n<b>Öffentlichkeitsarbeit und Marketing</b>\nGunter Zettl (rechts)
+        
+        \n\nLiebe Freunde des Handballsports,
+\n\nwie in den Jahren zuvor beginnt für die Weilheimer Handballer Mitte September der Spielbetrieb für  die Saison 2014/15. Nach intensiver Saisonvorbereitung der einzelnen Teams, heißt es nun die vorgenommenen Ziele in die Tat umzusetzen.
+\n\n im Vorjahr wird die zweite Damenmannschaft vom Trainerteam Kaufmann/Kiriakidis betreut. Hatte die Mannschaft sich im letzten Jahr einen Platz im Mittelfeld vorgenommen, so möchte man in dieser Saison einen weiteren Schritt nach vorne machen und sich in der oberen Tabellenhälfte der Kreisliga A etablieren.
+\n\nDas Bezirksligateam der ersten Damenmannschaft wird weiterhin von Martin Weiss trainiert. Der Mannschaft gelang es im letzten Jahr den Weggang von Topspielerin Kim Prengel durch größere mannschaftliche Geschlossenheit zu kompensieren. Leider war das Team aber in seinen Leistungen noch zu schwankend. Wenn es der Truppe gelingt mehr Stabilität zu zeigen, ist ein Platz im oberen Drittel der Tabelle auf jeden Fall realistisch.
+\n\nErstmalig wird in diesem Jahr vom Bezirk eine AD/AH Runde für die Damen ausgetragen. Die infrage kommenden Weilheimer Spielerinnen waren sogleich dafür zu haben. Es wurde daraufhin eine Mannschaft gemeldet. Wir wünschen Ihnen in der ersten Saison viel Erfolg.
+\n\nDie zweite Herrenmannschaft verpasste im letzten Jahr leider den Saisonziel Klassenerhalt. Nach einem teilweise recht unglücklichen Saisonverlauf mit einigen knappen Niederlagen, findet man sich in dieser Saison in der Kreisliga B wieder. Hier sollte aber für die Mannschaft von Trainer Florian Mauch ein guter Tabellenplatz kein Problem sein.
+\n\nDie erste Herrenmannschaft startet mit einem neuen Trainer in die Saison. Mit Alen Dimitrijevic tritt kein Unbekannter dieses Amt an, war er doch vor Jahren schon einmal Trainer unter der Limburg. Personell gab es keine großen Veränderungen. Den Abgang von Timmy Hiller und Alexander Müske konnte man mit dem Heimkehrer Patrick Auweter und Markus Mayer ausgleichen. Vom Leistungsvermögen der Mannschaft sollte die Vorjahresplatzierung jedenfalls erreichbar sein.
+\n\nWie die „Erste“, so haben auch unsere Jungsenioren einen neuen Coach. Mit Hansi Pietsch ist es jedoch eine bekannte Weilheimer Handballgröße. Mit neuen Trainingsinhalten wird er versuchen das Team zu möglichst vielen Erfolgserlebnissen zu führen.\n\nSchon vor dem ersten Anpfiff möchte sich die Handballabteilung jedoch bei ihren Gönnern, Sponsoren und unermüdlichen Helfern für die Unterstützung bedanken. Ohne diese Hilfe wäre ein Spielbetrieb nicht aufrecht zu erhalten. „Last but not least“ schon jetzt ein großes Dankeschön an unser tolles Publikum für vergangene und zukünftige Unterstützung.</string>
+    <string name="jugendleitungtext"><b>Jugendleiter/in</b> \nAnnette Breuninger (rechts)
+\nFriedrich Schumacher \n\n<b>stellv. Jugendleiterin</b> \nMaike Sigel</string>
+    <string name="wirtschaftsausschusstext">All diese auf dem Bild zu sehenden Gesichter sind die Gesichter des Wirtschaftsausschusses der Handballabteilung des TSV Weilheim. Im Wirtschaftsausschuss befindet sich unter anderen auch jeweils ein Mannschaftsvertreter, um eventuelle Probleme oder Verbesserungsvorschläge einzubringen. 
+\n\nDiese Gesichter kümmern sich um alles Organisatorische rund um den Sport, sei es die Einteilung der Hallendienste, das Planen verschiedener Feste, wie beispielsweise den Vatertagshock, das Hobbyturnier, Bezirksspielfest und viele mehr. Hierzu gehört vor allem das Einteilen der Helfer, das Festlegen der Preise, das Bestellen und Abholen wichtiger Dinge und natürlich das Helfen vor Ort. Diese Gesichter sind die ersten, die am Fest oder Heimspieltag anwesend sind und beim Aufbau helfen und auch die letzten, die gehen, wenn der Abbau sauber über die Bühne gebracht wurde. Auch über die Veranstaltung hinweg ist immer jemand da, der hilft, koordiniert, oder bei Bedarf auch einspringt. 
+\n\nUnd diese Gesichter haben auch einen Namen:  Florian Mauch, Mark Sigel, Jochen Fenske, Benjamin Banzhaf, Beate Pesl, Conny Fischer, Anja Hennig, Lena Sigel, Alisa Schaal, Annette Breuninger, Ulla Diez, Maike Sigel und Markus Mayer
+\n\nAll diese Namen bilden zusammen den Wirtschaftsausschuss – ein gutes Team, hilfsbereit, jederzeit ansprechbar und offen für neue Vorschläge.</string>
+    <string name="foerdervereintext">Mit dem Ziel der ideellen und finanziellen Förderung der Handballabteilung des TSV Weilheim e.V. übernahm der gemeinnützige Förderverein des Handballsports im Jahr 2001 eine nicht ganz einfache Aufgabe.
+
+\n\nNach einem zähen Start können wir heute einige Projekte als sehr gelungen bezeichnen, insbesondere im Jugendbereich und in der Außendarstellung unserer Handballabteilung sind einige Veränderungen durch die Unterstützung des Fördervereins entstanden.
+
+\n\nUnsere Aufgaben in der Förderung sehen wir in folgenden Bereichen:
+
+    \nJugendtraineraus- und –weiterbildung
+    \nUnterstützung beim Spielzubehör (Handbälle, Trikots, Trainingsanzüge, Verbandsmaterial)
+    \nZuschüsse zu Turnierbesuchen
+    \nBereitstellung von Preisen bei Turnieren
+
+\n\nAls Hauptaufgabe in den kommenden Jahren sehen wir weiterhin unser Engagement in einer verbesserten Jugendarbeit sowie in der Koordination des „Sponsorings“.
+
+\nMit unserem Verein möchten wir Sie als Eltern, Ehemalige, Aktive, Freunde, Handel und Gewerbe ansprechen.
+
+\n\nWerden auch Sie Mitglied im Förderverein des Handballsports des TSV Weilheim, Abt. Handball e.V. und helfen Sie mit, unsere Jugend in eine noch angenehmere Vereinsatmosphäre zu integrieren und die Handballfamilie in Weilheim zu erhalten. Der Mitgliedsbeitrag beträgt derzeit mindests 5,00 Euro pro Jahr und Person.
+
+
+\n\nAuch über eine Spende auf das Konto des Fördervereins Konto Nr. 866 2220, BLZ 611 500 20 bei der KSK Esslingen freut sich der Förderverein und die Handballgemeinschaft des TSV Weilheim! 
+
+\n\nWir hoffen aus Sie sind von unserer Sache überzeugt, und geben uns die Chance mit Ihrer Mitgliedschaft unsere Handballabteilung zu unterstützen. Sollten noch Fragen offen sein, stehen Ihnen die Vorstandsmitglieder des Fördervereins gerne zur Verfügung!</string>
+    <string name="impressumtext">	\nEine Abteilung des
+	\nTSV Weilheim an der Teck e. V.
+	\nEgelsbergstraße 1
+	\n73235 Weilheim an der Teck	
+	\n\nGeschäftsstelle
+	\nTel 07023 - 908713
+	\nFax 07023 - 908714	 
+	\n\nDie App wurde basierend auf den Daten der Internetseite www.handball-weilheim.de \nvon Dominic Zettl erstellt.
+	\n\n<b>Copyright</b> 	\n\nVervielfältigungen jeder Art sind nur mit ausdrücklicher Genehmigung der Verantwortlichen gestattet. Die Aufnahme in Online-Dienste und Internet sowie die Vervielfältigung auf Datenträger dürfen nur nach vorheriger schriftlicher Zustimmung des Vereins erfolgen.
+	\n\n<b>Haftung</b> 	\n\nDie Beiträge und Inhalte auf http://www.handball-weilheim.de/ werden mit Sorgfalt recherchiert. Dennoch wird eine Haftung ausgeschlossen.
+	\n\n<b>Wichtiger Hinweis zu allen Links</b>\n\nDer TSV Weilheim, insbesondere die Abteilung Handball, ist nicht für die Inhalte fremder Seiten verantwortlich, die über einen Link erreicht werden. Diese Erklärung gilt für alle auf dieser Homepage angebrachten Links.\n\n	</string>
+	
+    
+    <string name="herren1text">
+\n\n<b>Hinten:</b> Trainer Alen Dimitrijevic , Sebastian Sigel, Manuel Bauer, Patrick Seyferle, Co-Trainer Timo Klein, Florian Braun, Calvin Hartmann, Benjamin Banzhaf, Torwarttrainer Bernd Bierbaum.
+
+\n\n<b>Vorne:</b> Dominik Klett, Timo Sigel, Marcel Steinke, Markus Mayer, Bernhard Illi, Christopher Allgaier, Jan Stark, Patrick Auweter.
+
+\n\nDie vergangene Saison verlief lange Zeit, wie es sich die Weilheimer vorgestellt hatten: Stets war der TSV Weilheim in Schlagdistanz zu den härtesten Aufstiegskonkurrenten und wusste mit erfrischendem Tempohandball zu überzeugen. Mit zunehmender Saisondauer unterlag der TSV Weilheim allerdings immer häufiger teilweise verletzungsbedingten, teilweise einfach unerklärbaren Leistungsschwankungen. Vor allem gegen Mannschaften aus den unteren Tabellenregionen ließ der TSV Weilheim leichtfertig Punkte liegen. Doch nichtsdestotrotz hatte es der TSV Weilheim bis zum vorletzten Auswärtsspiel der Saison, bei der SG Lenningen, selbst in der Hand, sich hinter dem souveränen Meister HT Uhingen-Holzhausen den zweiten Tabellenplatz und damit die Aufstiegsrelegation zu sichern. Doch in Lenningen verspielte der TSV Weilheim eine Pausenführung von sieben Toren und musste zusehen, wie sich der Lokalrivale beflügelt vom Derbysieg durch die Aufstiegsrelegation kämpfte und sich für die Landesliga qualifizierte. Am Ende belegte der TSV Weilheim den vierten Tabellenplatz, womit sich Weilheims Trainer Alen Dimitrijevic insgesamt zufrieden zeigte. Mit einem Tick mehr Konstanz, wäre sicherlich ein besseres Abschneiden möglich gewesen. Die vergangene Saison sieht man unter der Limburg als Ansporn für die anstehende Spielzeit. „Ich habe einen eingespielten Kader zur Verfügung. Außerdem sind wir personell breiter aufgestellt als letzte Saison“, gibt sich Dimitrjievic zuversichtlich. Die Zuversicht schöpft er vor allem aus drei Neuzugänge und einem Rückkehrer. Als erstes ist da Marcel Steinke. Der Weilheimer Spielmacher erlitt gleich zu Beginn der vergangenen Saison einen Schlüsselbeinbruch und fiel die komplette restliche Spielzeit aus. Mittlerweile ist die Verletzung verheilt und Steinke zurück im Training. Die Weilheimer erhalten dadurch vor allem in der Offensive mehr Durchschlagskraft. Die Durchschlagskraft erhöht sich zudem aufgrund der Verpflichtung von Christopher Allgaier vom TSV Denkendorf. Der Neuzugang ist flexibel auf der linken oder der rechten Rückraumposition einsetzbar und besticht durch sein körperbetontes Spiel. Auf Linksaußen kam mit Jan Stark vom TSV Owen ein schneller, technisch versierter Spieler unter die Limburg. Der dritte Neue, Manuel Bauer, kommt ebenfalls vom TSV Owen und wird zusammen mit Kapitän Dominik Klett und wahlweise Sebastian Sigel die Position am Kreis besetzen. Mit den Neuzugängen wurde adäquater Ersatz für Bernhard Bendl und Timo Klein gefunden. Beide beendeten ihre Karrieren. Wobei Timo Klein als Co-Trainer dem TSV Weilheim erhalten bleibt. Zusammen mit Torwarttrainer Bernd Bierbaum ergänzt Klein das Trainergespann von Dimitrijevic und unterstützt die wöchentliche Trainingsarbeit.
+\n\nMit den Neuzugängen besitzt Dimitrijevic mehr taktische Optionen im Angriffs- und Abwehrspiel. Das Spiel des TSV Weilheim gewinnt dadurch an Variabilität. Zudem ergeben sich nun mehr Auswechselmöglichkeiten, wodurch sich das Trainergespann erhofft, dass die häufigen Leistungsschwankungen der vergangenen Saison behoben werden können. Vor allem im Rückspiel bei der SG Lenningen oder beim Auswärtsspiel gegen Lokalkonkurrent VfL Kirchheim hatte sich Dimitrijevic in der vergangenen Spielzeit mehr Wechselmöglichkeiten gewünscht. Die Verbreiterung des Kaders ist allerdings auch als eine Reaktion auf die Verletzungssorgen der vergangenen Saison zu sehen, als immer wieder Leistungsträger, wie eben Marcel Steinke, ausfielen und Dimitrijevic zur Improvisation gezwungen war.
+\n\nIn der neuen Saison wird sich zeigen, was der verbreiterte Kader in der Lage sein wird zu leisten. Im Angesicht von drei Landesligaabsteigern (TuS Stuttgart, HSG Leinfelden-Echterdingen und TEAM Esslingen) und den namhaften Verstärkungen der SG Hegensberg-Liebersbronn und TEAM Esslingen oder dem TSV Köngen ist die Leistungsdichte in der Bezirksliga erneut deutlich angestiegen. Die Meisterschaft wird in dieser Saison voraussichtlich zwischen den beiden Esslinger Vereinen SG Hegensberg/Liebersbronn und TEAM Esslingen ausgespielt. Aber auch der VfL Kirchheim gilt als heißer Aufstiegsanwärter. Das Saisonziel des TSV Weilheim ist ein Platz unter den ersten vier Mannschaften. Ob das Saisonziel letztendlich erreicht wird maßgeblich davon abhängen, ob der TSV Weilheim eine höhere Konstanz abrufen kann oder nicht. Trainer Dimitrijevic sieht seine Mannschaft jedenfalls auf dem richtigen Weg: „Mit der Vorbereitung bin ich zufrieden. In den Trainingsspielen hat die Mannschaft gute Resultate erzielt. Zudem konnten wir unterschiedliche Aufstellungen und Abwehrvarianten testen.“ Insgesamt sei eine positive Entwicklung zu sehen, so Dimitrijevic weiter.
+
+\n\nZugänge: Manuel Bauer, Jan Stark (beide TSV Owen), Christopher Allgaier (TSV Denkendorf).
+
+\n\nAbgang: Bernhard Bendl (Karriereende), Timo Klein (Co-Trainer).</string>
+
+    
+    
+    
+    <string name="herren2text">
+<b>Hinten:</b> Christo Kiriakidis, Felix Kupferschmid, Jakob Klein, Marco Fiedler, Andreas Klein, Trainer Jürgen Hayler.
+
+\n\n<b>Vorne:</b> Fabian Schmidbauer, Michael Bender, Mark Sigel, Moritz Latzel, Jens Neutel, Andreas Klöhn.
+\n\nEs fehlen: Karl-Friedrich Schumacher, German Höferer, Benjamin Hayler, Dominic Zettl.
+\n\nDie Saison 2015/ 2016 steht ganz im Zeichen des Neustarts für die Zweite Herrenmannschaft des TSV Weilheims. Nachdem die vergangene Saison aufgrund zu vieler knapp verlorener Spiele alles andere als planmäßig verlief, muss die Zweite in der Saison 2015/ 2016 in der Kreisliga C an den Start gehen. Die Hoffnung den bitteren Gang in die Kreisliga C doch noch abwenden zu können, wurde neu entfacht als die Weilheimer die Info bekamen, dass sie gegen Esslingen doch noch Relegation spielen können. Ein Team der Kreisliga B hatte angekündigt, ihre Mannschaft zurückzuziehen, wodurch ein Platz in der Kreisliga B frei werden würde. Weilheim wollte die Chance unbedingt nutzen und gewann beide Relegationsspiele hochverdient, auch dank der famosen Fans. Doch wie sich im Nachhinein herausstellte waren beide Siege wertlos, da die Mannschaft trotz ihrer ursprünglichen Ankündigung ihr Team zurückzuziehen, dann doch an ihrem Spielrecht fest hielt.
+\n\nFür die kommende Saison hat sich bei der Zweiten einiges geändert. So ist der bisherige Spielertrainer Florian Mauch dem Ruf der Neuffener Verantwortlichen gefolgt und wird zukünftig die Neuffener Damen trainieren. Der langjährige Kapitän Marcel Holl und Markus Bruschat haben die Handballschuhe an den Nagel gehängt. Neu im Team sind Felix Kupferschmid, der aus der ersten Mannschaft des TSV Owen nach Weilheim zurückwechselte, Jakob Klein, der mit einem Doppelspielrecht ausgestattet wurde und Fabian Schmidbauer, der nach einer einjährigen Auszeit vom Handball wieder dabei ist. Auch auf der Trainerposition konnte, mit Jürgen Hayler ein „Ur-Weilheimer“ gewonnen werden. Hayler spielte selbst in der ersten Herrenmannschaft und trainierte in der Vergangenheit schon diverse Weilheimer Teams.
+\n\nFür die Weilheimer kann es für die anstehende Saison nur ein Ziel geben und das ist der direkte Wiederaufstieg. Das Potential hierfür ist in der Mannschaft absolut vorhanden, jetzt muss dies nur noch in den Spielen abgerufen werden.  
+
+</string>
+
+    
+    
+    <string name="damen1text"><b>Hinten:</b> Nadine Saida, Kathrin Ulmer, Heike Schrägle, Stephanie Attinger, Michaela Ruml, Hanna Barner, Ulla Diez, Carolin Schmid.
+
+\n\n<b>Vorne:</b> Tanja Bachofer, Anne Fetzer, Annika Hofmann, Maike Sigel, Stephanie Schwarz, Franziska Schmid, Lisa Attinger, Trainer Martin Weiß.
+\n\n<b>Es fehlen:</b> Simone Albert, Julia Gutbrod, Katja Gall und Nicole Schmid.
+        \n\nAm Ende der letzten Saison stand die Damenmannschaft auf einem unglücklichen 8. Platz. Das Saisonziel, im oberen Drittel dabei zu sein, wurde somit verfehlt. Doch in der Bezirksliga ging es denkbar knapp her und mit 2 zusätzlichen Siegen wäre bereits Platz 4 in Aussicht gewesen. Vor allem die beiden verlorenen Spiele gegen den Lokalrivalen des TSV Owen haben dabei ihre Spuren in den Köpfen der Spielerinnen hinterlassen. Dass das Ziel durchaus erreichbar gewesen wäre, wurde in den meisten Spielen zeitweilig auch gezeigt, jedoch fehlte es an Konstanz.
+		In der Saison 2014/15 ist das Ziel der Mannschaft um Trainer Martin Weiß, die guten Phasen deutlich zu verlängern und auf und neben dem Spielfeld Teamgeist zu demonstrieren. Das ist die Mannschaft auch den Zuschauern schuldig. 
+		\n\nDer Kader ist mit 13 Spielerinnen relativ klein. Leider sind einige Abgänge zu verzeichnen: Julia Kerssens und Sabrina Fischer haben die Handballschuhe zwar nicht ganz an den Nagel gehängt, sich aber aus der Damenmannschaft verabschiedet. Julia Gutbrod ist zurzeit in Australien und wird erst nach Saisonstart zurückkommen. Wann sich Katja Gall nach ihrer Babypause zurückmeldet ist noch unsicher. Sowohl bei Kathrin Ulmer als auch bei Franziska Schmid steht die Entscheidung des Studienorts noch aus. Umso erfreulicher, dass Ulla Diez nach langer Verletzungspause wieder zurückkehrt. Hanna Barner und Nicole Schmid wechseln nach Weilheim.
+		\n\nDie Trainingsbeteiligung in der Vorbereitung ist gut und das Turnier in Owen hat gezeigt, dass viel Potential in der Mannschaft steckt. Bis zu Saisonbeginn gilt es, das auch abrufen zu können. Ein Schwerpunkt dabei ist die Abwehrarbeit, die in der kommenden Saison deutlich flexibler gestaltet werden soll. Im Angriff gilt es, die Chancenverwertung zu verbessern und nicht so schnell den Kopf zu verlieren.
+		\n\nDie Unterstützung der Zuschauer der letzten Saison war super und wir hoffen, dass das noch getoppt werden kann. Wir freuen uns auf einen guten Start und eine erfolgreiche und verletzungsfreie Saison.</string>
+
+    
+    <string name="damen2text"><b>Hinten:</b> Vanessa Kamin, Katja Hannig, Svenja Klingmann, Lena Sigel, Katharina Karban, Annette Breuninger.
+\n\n<b>Vorne:</b> Trainer Christo Kiriakidis, Lisa Attinger, Nicole Sigel, Vivien Hohler, Britte Braun, Julia Koser, Isabel Hieber.
+\n\nEs fehlen: Alina Prengel, Anne Fetzer, Laura Tremmel, Sarina Schmid, Wiebke Schwebke.
+\n\nAuch zur Saison 2015/2016 treten die Weilheimer Damen, nun in Ihrem 5. Jahr, mit einer 2. Damen-mannschaft an.
+\n\nDie „zweite“ der TSV Damen schaut auf eine abwechslungsreiche Saison zurück. Nach einem durchaus ausbaubarem 6. Tabellenplatz in der letzten Saison möchte man nun mit neuer Motivation, Ehrgeiz und gesteigerten Erwartungen das bereits in der letzten Runde gesetzte Mannschaftsziel, „oberes Tabellendrittel“, neu angreifen.
+\n\nZu Beginn der neuen Runde sind auch bei der zweiten Damenmannschaft personelle Umstrukturie-rungen zu verbuchen.
+\n\nNeu begrüßen dürfen wir Britta Braun von der SG Lenningen sowie Vivien Hohler die sich in der kommenden Saison die wichtige Torhüterrolle teilen werden. Aus der eigenen A-Jugend kommend, zählen Sarina Schmid sowie Alina Prengel nun fest zum Kader der „zweiten“.
+\n\nEbenso muss die 2. Damenmannschaft zur neunen Saison auf einige Spielerinnen verzichten. Neben der Verabschiedung von Nicole Reethen, Melanie Mahle und Vanesssa Friess hat man den verlet-zungsbedingten Ausfall von Lisa Attinger und Alina Prengel zu kompensieren.
+\n\nZudem musste man sich von Trainer Alexander Kaufmann trennen, welcher nun seine Zeit voll und ganz der die Familie widmen möchte. Somit übernahm Christo Kiriakidis nun allein die Trainerposition und möchte in seinem dritten Jahr als Trainer der „zweiten“ wieder neu angreifen. So kämpften sich die Mädels durch eine verschärfte Vorbereitung und versuchten durch intensive Trainingseinheiten Kraft, Ausdauer und Überblick über ihr Spiel zu gewinnen.
+\n\nJetzt zählt es, die gemachten Erfahrungen und den spielerischen Fortschritt in der Liga umsetzen zu können. Somit vertrauen die Mädels auch weiterhin auf den tollen Rückhalt ihrer Fans bei den kom-menden Spielen auswärts sowie in der Lindachsporthalle.
+ </string>
+ 
+    
+    <string name="jstext"><b>Junge Senioren – Ü40</b>
+\n\nNach einem weiteren Jahr hartem Kampf mussten wir uns leider eingestehen, dass wir nur noch an Sahnetagen mit anderen Jungsenioren über die volle Distanz mithalten können - und diese Tage kommen leider immer seltener…Nachdem nun auch noch der ‚Nachwuchs‘ fehlt, haben wir uns schweren Herzens entschlossen, dieses Jahr nur für die Ü40-Runde zu melden, zumal fast alle das Schwabenalter erreicht haben!
+Wir werden uns auch diese Runde nicht unterkriegen lassen und wollen nach den ernüchternden Ergebnissen der Vorsaison die Kräfte bündeln und vorne angreifen. Gas geben wollen wir auch im Training – hier freuen wir uns auf ein paar heiße Duelle mit der M2 – und natürlich wird auch der Spaß und die Geselligkeit nach dem Training nicht zu kurz kommen!
+Generell freuen wir uns über jeden „Neuzugang“ und Quer- oder Wieder-Einsteiger, der unsere lustige und erfolgshungrige Truppe verstärken möchte. Wir sehen uns dann freitagabends beim Training in der Lindach-Sporthalle!
+
+</string>
+    <string name="adtext"><b>Wir sind "Atemlos!!!" ...</b> \n... und haben trotzdem immer im Kopf: "Die Hölle morgen früh ist mir egal".
+Unter diesem Motto hat sich diese Saison seit langem wieder eine AD-Mannschaft ("Attraktive Damen", Ü30) zusammengefunden.
+\n\nDer Mix der Spielerinnen ist super: Neben Wiedereinsteigerinnen und aktiven Spielerinnen sind auch schon Youngsters mit dabei - denn wir wissen alle, dass Nachwuchsarbeit sehr wichtig ist. Bereits in den ersten Trainingseinheiten hat sich gezeigt, dass zwar der Spaß eindeutig im Vordergrund steht, aber es trotzdem Jede noch wissen will und es geht immer mit Ehrgeiz zur Sache.
+\n\nDie Trainingszeit am Freitagabend macht ein anschließendes Zusammensitzen, auch mit den Jungsenioren, möglich und es bleibt zum Glück das ganz Wochenende, um sich von der Anstrengung zu erholen.
+\n\nLeider kommt aufgrund zu weniger Mannschaftsmeldungen keine offizielle Spielrunde 2014/15 zustande. Wir werden deshalb versuchen den ein oder anderen Gegner für ein Trainingsspiel oder ein kleines Turnier zu finden. 
+\n\nWir freuen uns natürlich über Jede, die Spaß am Handball und der 3. Halbzeit hat und gerne bei uns dabei sein möchte!</string>
+    <string name="title_activity_impressum">TSV Weilheim - Impressum</string>
+    <string name="title_activity_organisation_menu">TSV Weilheim - Organisation</string>
+    <string name="title_activity_show_orga">ShowOrgaActivity</string>
+
+</resources>
