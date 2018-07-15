@@ -16,15 +16,8 @@ import com.globalone.tsvweilheimapp.R;
 public class MainSwitcherActivity extends android.support.v4.app.FragmentActivity implements
 		ActionBar.TabListener {
 
-	
-	
 	private ViewPager viewPager;
-	
-
-	
-
 	private FragmentAdapter mAdapter;
-	
 	private ActionBar actionBar;
 //	http://code.tutsplus.com/tutorials/android-compatibility-working-with-fragments--mobile-5431
 	// Tab titles
@@ -44,33 +37,21 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 		actionBar = getActionBar();
 		mAdapter = new FragmentAdapter(getSupportFragmentManager());
 
-		// viewPager.setBackgroundColor(Color.LTGRAY);
-
 		viewPager.setAdapter(mAdapter);
 
-		// actionBar.setBackgroundDrawable(new ColorDrawable(Color.WHITE));
-
 		actionBar.setHomeButtonEnabled(false);
-
 		actionBar.setDisplayShowTitleEnabled(false);
 		actionBar.setDisplayShowHomeEnabled(false);
 
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-		// Adding Tabs
-		// for (String tab_name : tabs) {
-		// actionBar.addTab(actionBar.newTab().setText(tab_name)
-		// .setTabListener(this));
-		//
-		// }
-		// Actionbar weiß..
+		// Actionbar weiï¿½..
 		actionBar.setStackedBackgroundDrawable(new ColorDrawable(getResources()
 				.getColor(R.color.White)));
 
 		for (int iconid : ICONS) {
 			actionBar.addTab(actionBar.newTab().setIcon(iconid)
 					.setTabListener(this));
-
 		}
 
 		/**
@@ -83,9 +64,7 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 				// on changing the page
 				// make respected tab selected
 				Log.v("SELECTED","NEUU" + String.valueOf(position));
-				
 				actionBar.setSelectedNavigationItem(position);
-				
 			}
 
 			@Override
@@ -100,13 +79,10 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 
 	@Override
 	public void onTabReselected(Tab tab, android.app.FragmentTransaction ft) {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void onTabSelected(Tab tab, android.app.FragmentTransaction ft) {
-		// TODO Auto-generated method stub
 		Log.v("SELECTED","UNTEN");
 		mAdapter.setM_item(tab.getPosition());
 		viewPager.setCurrentItem(tab.getPosition());
@@ -114,8 +90,5 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 
 	@Override
 	public void onTabUnselected(Tab tab, android.app.FragmentTransaction ft) {
-		// TODO Auto-generated method stub
-
 	}
-
 }

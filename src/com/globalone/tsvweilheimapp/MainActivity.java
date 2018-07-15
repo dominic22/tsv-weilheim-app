@@ -27,37 +27,24 @@ import android.widget.TextView;
 import com.globalone.tsvweilheimapp.listview.MyListAdapter;
 
 public class MainActivity extends ListActivity {
-
 	// Progress Dialog
 	private ProgressDialog pDialog;
 
-	// php read comments script
-
-	// localhost :
 	// testing on your device
 	// put your local ip instead, on windows, run CMD > ipconfig
 	// or in mac's terminal type ifconfig and look for the ip under en0 or en1
 	// private static final String READ_COMMENTS_URL =
 	// "http://xxx.xxx.x.x:1234/webservice/comments.php";
 
-	// testing on Emulator:
-	private static final String READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/comments.php"; // "http://globalone331.bplaced.net/webservice/comments.php";
-
-	// testing from a real server:
-	// private static final String READ_COMMENTS_URL =
-	// "http://www.mybringback.com/webservice/comments.php";
-
 	TextView txtComments;
+	private static final String READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/comments.php"; // "http://globalone331.bplaced.net/webservice/comments.php";
 	// JSON IDS:
-
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_TITLE = "title";
 	private static final String TAG_POSTS = "posts";
 	private static final String TAG_INTROTEXT = "introtext";
 	private static final String TAG_FULLTEXT = "fulltext";
 
-	// private static final String TAG_USERNAME = "username";
-	// private static final String TAG_MESSAGE = "message";
 	// it's important to note that the message is both in the parent branch of
 	// our JSON tree that displays a "Post Available" or a "No Post Available"
 	// message,
@@ -69,7 +56,6 @@ public class MainActivity extends ListActivity {
 	private JSONArray mComments = null;
 	// manages all of our comments in a list.
 	private ArrayList<HashMap<String, String>> mCommentList;
-
 	private ArrayList<HashMap<String, String>> arrFullContent;
 
 	@Override
@@ -83,16 +69,13 @@ public class MainActivity extends ListActivity {
 			new LoadComments().execute();
 		}
 		else{
-			new AlertDialog.Builder(this).setTitle("Keine Internetverbindung!").setMessage("Bitte überprüfen Sie Ihre Internetverbindung.").setPositiveButton("OK", new DialogInterface.OnClickListener() {
+			new AlertDialog.Builder(this).setTitle("Keine Internetverbindung!").setMessage("Bitte ï¿½berprï¿½fen Sie Ihre Internetverbindung.").setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					
 				}
 			}).show();
 		}
-
 	}
 
 	@Override
@@ -148,7 +131,6 @@ public class MainActivity extends ListActivity {
 				maxNews = mComments.length();
 
 			// looping through all posts according to the json object returned
-
 			for (int i = 0; i < maxNews/* mComments.length() */; i++) {
 				JSONObject c = mComments.getJSONObject(i);
 
@@ -156,8 +138,6 @@ public class MainActivity extends ListActivity {
 				String title = c.getString(TAG_TITLE);
 				String introtext = c.getString(TAG_INTROTEXT);
 				String fulltext = c.getString(TAG_FULLTEXT);
-
-				// TODO
 
 				if (fulltext != "") {
 
@@ -170,44 +150,16 @@ public class MainActivity extends ListActivity {
 					}
 				}
 				// Parse Content... >.<
-				introtext = introtext.replaceAll("<" + ".*?" + ">", "");// ("(&<=)[^&]*(&>=)",
-																		// "$1foo$2");
-
-				// Ansonsten str.replaceAll("(?<=<p>).*?(?=</p>)",
-				// "replacement");
-
-				// String username = c.getString(TAG_USERNAME);
-
-				// creating new HashMap
+				introtext = introtext.replaceAll("<" + ".*?" + ">", "");
 				HashMap<String, String> map = new HashMap<String, String>();
-
 				HashMap<String, String> mapFullContent = new HashMap<String, String>();
 
 				map.put(TAG_TITLE, title);
 				map.put(TAG_INTROTEXT, introtext);
 				if (fulltext != "")
 					map.put(TAG_FULLTEXT, fulltext);
-
 				// adding HashList to ArrayList
 				mCommentList.add(map);
-
-				// mapFullContent.put(TAG_FULLTEXT, strFullText);
-
-				// arrFullContent.add(mapFullContent);
-
-				// arrFullContent.add(strFullText);
-
-				/*
-				 * String str = ""; for(int xy = 0 ; xy<
-				 * mCommentList.size();xy++){ str +=
-				 * mCommentList.get(xy).toString();
-				 * 
-				 * } txtComments.setText(str);
-				 */
-
-				// annndddd, our JSON data is up to date same with our array
-				// list
-
 			}
 
 		} catch (JSONException e) {
@@ -252,37 +204,18 @@ public class MainActivity extends ListActivity {
 				// String item = ((TextView)view).getText().toString();
 				Integer index = position;
 				String str = index.toString();
-
-				// Toast.makeText(getApplicationContext() , str,
-				// Toast.LENGTH_LONG).show();
-
-				/*
-				 * for(HashMap<String, String> map: mylist) { for(Entry<String,
-				 * String> mapEntry: map.entrySet()) { String key =
-				 * mapEntry.getKey(); String value = mapEntry.getValue(); } }
-				 */
-
-				// HashMap<String, String> mapActContent=
-				// arrFullContent.get(position);
 				HashMap<String, String> mapActContent = mCommentList
 						.get(position);
 				String strActContent = mapActContent.get(TAG_FULLTEXT);
-
 				Intent myIntent = new Intent(view.getContext(),
 						FullContentActivity.class);
 				myIntent.putExtra("strActContent", strActContent);
 
-				// startActivityForResult(myIntent, 0); // Nur einmal starten..
-
-				// Titel übergeben
+				// Titel uebergeben
 				String strActTitle = mapActContent.get(TAG_TITLE);
-
-				// Intent myIntent2 = new Intent(view.getContext(),
-				// FullContentActivity.class);
 				myIntent.putExtra("strActTitle", strActTitle);
-				// startActivityForResult(myIntent, 0);// Nur einmal starten..
 
-				// Intro übergeben
+				// Intro uebergeben
 				String strActIntro = mapActContent.get(TAG_INTROTEXT);
 
 				// Intent myIntent2 = new Intent(view.getContext(),
@@ -299,23 +232,14 @@ public class MainActivity extends ListActivity {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-			/*
-			 * pDialog = new ProgressDialog(MainActivity.this);
-			 * 
-			 * pDialog.setMessage("Loading Comments...");
-			 * pDialog.setIndeterminate(false); pDialog.setCancelable(true);
-			 * pDialog.show();
-			 */
 			pDialog = ProgressDialog.show(MainActivity.this,
 					"Lade Nachrichten...", "Bitte warten...", true);
-
 		}
 
 		@Override
 		protected Boolean doInBackground(Void... arg0) {
 			updateJSONdata();
 			return null;
-
 		}
 
 		@Override

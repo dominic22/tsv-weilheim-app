@@ -27,10 +27,6 @@ public class Fragment3 extends Fragment {
 
 		String receivedMannschaft = getActivity().getIntent().getStringExtra(
 				"Mannschaft");
-		// imageView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
-		// LayoutParams.WRAP_CONTENT));
-	
-
 
 		if (receivedMannschaft.equals("erste")) {
 			imageView.setBackgroundResource(R.drawable.herren1);

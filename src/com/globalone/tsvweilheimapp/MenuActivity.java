@@ -11,13 +11,11 @@ import android.widget.Button;
 public class MenuActivity extends Activity implements OnClickListener{
 
 	Button btnNews,btnTeams,btnImpressum,btnOrga;
-	
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
-		
 		btnNews = (Button) findViewById(R.id.btnNews);
 		btnTeams = (Button) findViewById(R.id.btnTeams);
 		btnImpressum = (Button) findViewById(R.id.btnImpressum);
@@ -26,7 +24,6 @@ public class MenuActivity extends Activity implements OnClickListener{
 		btnNews.setOnClickListener(this);
 		btnTeams.setOnClickListener(this);
 		btnImpressum.setOnClickListener(this);
-		
 	}
 
 	@Override
@@ -38,7 +35,6 @@ public class MenuActivity extends Activity implements OnClickListener{
 	
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.btnNews:
 			Intent i1 = new Intent(this, MainActivity.class);
@@ -84,8 +80,4 @@ public class MenuActivity extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		super.onResume();
 	}
-	
-	
-	
-
 }
