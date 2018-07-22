@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tsvweilheimapp.globalone.com.tsvweilheim">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FullContentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TeamsActivity"
+            android:label="@string/title_activity_teams"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".UebersichtActivity"
+            android:label="@string/title_activity_uebersicht"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/title_activity_uebersicht"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".xmladapter.MainXML"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".viewswitcher.MainSwitcherActivity"
+            android:label="@string/title_activity_main_switcher"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ImpressumActivity"
+            android:label="@string/title_activity_impressum"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OrganisationMenu"
+            android:label="@string/title_activity_organisation_menu"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ShowOrgaActivity"
+            android:label="@string/title_activity_show_orga"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+</manifest>
