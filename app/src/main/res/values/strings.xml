@@ -33,13 +33,17 @@
 \n\nErstmalig wird in diesem Jahr vom Bezirk eine AD/AH Runde für die Damen ausgetragen. Die infrage kommenden Weilheimer Spielerinnen waren sogleich dafür zu haben. Es wurde daraufhin eine Mannschaft gemeldet. Wir wünschen Ihnen in der ersten Saison viel Erfolg.
 \n\nDie zweite Herrenmannschaft verpasste im letzten Jahr leider den Saisonziel Klassenerhalt. Nach einem teilweise recht unglücklichen Saisonverlauf mit einigen knappen Niederlagen, findet man sich in dieser Saison in der Kreisliga B wieder. Hier sollte aber für die Mannschaft von Trainer Florian Mauch ein guter Tabellenplatz kein Problem sein.
 \n\nDie erste Herrenmannschaft startet mit einem neuen Trainer in die Saison. Mit Alen Dimitrijevic tritt kein Unbekannter dieses Amt an, war er doch vor Jahren schon einmal Trainer unter der Limburg. Personell gab es keine großen Veränderungen. Den Abgang von Timmy Hiller und Alexander Müske konnte man mit dem Heimkehrer Patrick Auweter und Markus Mayer ausgleichen. Vom Leistungsvermögen der Mannschaft sollte die Vorjahresplatzierung jedenfalls erreichbar sein.
-\n\nWie die „Erste“, so haben auch unsere Jungsenioren einen neuen Coach. Mit Hansi Pietsch ist es jedoch eine bekannte Weilheimer Handballgröße. Mit neuen Trainingsinhalten wird er versuchen das Team zu möglichst vielen Erfolgserlebnissen zu führen.\n\nSchon vor dem ersten Anpfiff möchte sich die Handballabteilung jedoch bei ihren Gönnern, Sponsoren und unermüdlichen Helfern für die Unterstützung bedanken. Ohne diese Hilfe wäre ein Spielbetrieb nicht aufrecht zu erhalten. „Last but not least“ schon jetzt ein großes Dankeschön an unser tolles Publikum für vergangene und zukünftige Unterstützung.</string>
+\n\nWie die „Erste“, so haben auch unsere Jungsenioren einen neuen Coach. Mit Hansi Pietsch ist es jedoch eine bekannte Weilheimer Handballgröße. Mit neuen Trainingsinhalten wird er versuchen das Team zu möglichst vielen Erfolgserlebnissen zu führen.\n\nSchon vor dem ersten Anpfiff möchte sich die Handballabteilung jedoch bei ihren Gönnern, Sponsoren und unermüdlichen Helfern für die Unterstützung bedanken. Ohne diese Hilfe wäre ein Spielbetrieb nicht aufrecht zu erhalten. „Last but not least“ schon jetzt ein großes Dankeschön an unser tolles Publikum für vergangene und zukünftige Unterstützung.
+</string>
     <string name="jugendleitungtext"><b>Jugendleiter/in</b> \nAnnette Breuninger (rechts)
-\nFriedrich Schumacher \n\n<b>stellv. Jugendleiterin</b> \nMaike Sigel</string>
+\nFriedrich Schumacher
+ \n\n<b>stellv. Jugendleiterin</b> \nMaike Sigel
+</string>
     <string name="wirtschaftsausschusstext">All diese auf dem Bild zu sehenden Gesichter sind die Gesichter des Wirtschaftsausschusses der Handballabteilung des TSV Weilheim. Im Wirtschaftsausschuss befindet sich unter anderen auch jeweils ein Mannschaftsvertreter, um eventuelle Probleme oder Verbesserungsvorschläge einzubringen. 
 \n\nDiese Gesichter kümmern sich um alles Organisatorische rund um den Sport, sei es die Einteilung der Hallendienste, das Planen verschiedener Feste, wie beispielsweise den Vatertagshock, das Hobbyturnier, Bezirksspielfest und viele mehr. Hierzu gehört vor allem das Einteilen der Helfer, das Festlegen der Preise, das Bestellen und Abholen wichtiger Dinge und natürlich das Helfen vor Ort. Diese Gesichter sind die ersten, die am Fest oder Heimspieltag anwesend sind und beim Aufbau helfen und auch die letzten, die gehen, wenn der Abbau sauber über die Bühne gebracht wurde. Auch über die Veranstaltung hinweg ist immer jemand da, der hilft, koordiniert, oder bei Bedarf auch einspringt. 
 \n\nUnd diese Gesichter haben auch einen Namen:  Florian Mauch, Mark Sigel, Jochen Fenske, Benjamin Banzhaf, Beate Pesl, Conny Fischer, Anja Hennig, Lena Sigel, Alisa Schaal, Annette Breuninger, Ulla Diez, Maike Sigel und Markus Mayer
-\n\nAll diese Namen bilden zusammen den Wirtschaftsausschuss – ein gutes Team, hilfsbereit, jederzeit ansprechbar und offen für neue Vorschläge.</string>
+\n\nAll diese Namen bilden zusammen den Wirtschaftsausschuss – ein gutes Team, hilfsbereit, jederzeit ansprechbar und offen für neue Vorschläge.
+</string>
     <string name="foerdervereintext">Mit dem Ziel der ideellen und finanziellen Förderung der Handballabteilung des TSV Weilheim e.V. übernahm der gemeinnützige Förderverein des Handballsports im Jahr 2001 eine nicht ganz einfache Aufgabe.
 
 \n\nNach einem zähen Start können wir heute einige Projekte als sehr gelungen bezeichnen, insbesondere im Jugendbereich und in der Außendarstellung unserer Handballabteilung sind einige Veränderungen durch die Unterstützung des Fördervereins entstanden.
@@ -60,7 +64,8 @@
 
 \n\nAuch über eine Spende auf das Konto des Fördervereins Konto Nr. 866 2220, BLZ 611 500 20 bei der KSK Esslingen freut sich der Förderverein und die Handballgemeinschaft des TSV Weilheim! 
 
-\n\nWir hoffen aus Sie sind von unserer Sache überzeugt, und geben uns die Chance mit Ihrer Mitgliedschaft unsere Handballabteilung zu unterstützen. Sollten noch Fragen offen sein, stehen Ihnen die Vorstandsmitglieder des Fördervereins gerne zur Verfügung!</string>
+\n\nWir hoffen aus Sie sind von unserer Sache überzeugt, und geben uns die Chance mit Ihrer Mitgliedschaft unsere Handballabteilung zu unterstützen. Sollten noch Fragen offen sein, stehen Ihnen die Vorstandsmitglieder des Fördervereins gerne zur Verfügung!
+</string>
     <string name="impressumtext">	\nEine Abteilung des
 	\nTSV Weilheim an der Teck e. V.
 	\nEgelsbergstraße 1
@@ -71,9 +76,10 @@
 	\n\nDie App wurde basierend auf den Daten der Internetseite www.handball-weilheim.de \nvon Dominic Zettl erstellt.
 	\n\n<b>Copyright</b> 	\n\nVervielfältigungen jeder Art sind nur mit ausdrücklicher Genehmigung der Verantwortlichen gestattet. Die Aufnahme in Online-Dienste und Internet sowie die Vervielfältigung auf Datenträger dürfen nur nach vorheriger schriftlicher Zustimmung des Vereins erfolgen.
 	\n\n<b>Haftung</b> 	\n\nDie Beiträge und Inhalte auf http://www.handball-weilheim.de/ werden mit Sorgfalt recherchiert. Dennoch wird eine Haftung ausgeschlossen.
-	\n\n<b>Wichtiger Hinweis zu allen Links</b>\n\nDer TSV Weilheim, insbesondere die Abteilung Handball, ist nicht für die Inhalte fremder Seiten verantwortlich, die über einen Link erreicht werden. Diese Erklärung gilt für alle auf dieser Homepage angebrachten Links.\n\n	</string>
-	
-    
+	\n\n<b>Wichtiger Hinweis zu allen Links</b>\n\nDer TSV Weilheim, insbesondere die Abteilung Handball, ist nicht für die Inhalte fremder Seiten verantwortlich, die über einen Link erreicht werden. Diese Erklärung gilt für alle auf dieser Homepage angebrachten Links.\n\n
+	</string>
+
+
     <string name="herren1text">
 \n\n<b>Hinten:</b> Trainer Alen Dimitrijevic , Sebastian Sigel, Manuel Bauer, Patrick Seyferle, Co-Trainer Timo Klein, Florian Braun, Calvin Hartmann, Benjamin Banzhaf, Torwarttrainer Bernd Bierbaum.
 
@@ -85,11 +91,10 @@
 
 \n\nZugänge: Manuel Bauer, Jan Stark (beide TSV Owen), Christopher Allgaier (TSV Denkendorf).
 
-\n\nAbgang: Bernhard Bendl (Karriereende), Timo Klein (Co-Trainer).</string>
+\n\nAbgang: Bernhard Bendl (Karriereende), Timo Klein (Co-Trainer).
+</string>
 
-    
-    
-    
+
     <string name="herren2text">
 <b>Hinten:</b> Christo Kiriakidis, Felix Kupferschmid, Jakob Klein, Marco Fiedler, Andreas Klein, Trainer Jürgen Hayler.
 
@@ -101,8 +106,7 @@
 
 </string>
 
-    
-    
+
     <string name="damen1text"><b>Hinten:</b> Nadine Saida, Kathrin Ulmer, Heike Schrägle, Stephanie Attinger, Michaela Ruml, Hanna Barner, Ulla Diez, Carolin Schmid.
 
 \n\n<b>Vorne:</b> Tanja Bachofer, Anne Fetzer, Annika Hofmann, Maike Sigel, Stephanie Schwarz, Franziska Schmid, Lisa Attinger, Trainer Martin Weiß.
@@ -111,9 +115,10 @@
 		In der Saison 2014/15 ist das Ziel der Mannschaft um Trainer Martin Weiß, die guten Phasen deutlich zu verlängern und auf und neben dem Spielfeld Teamgeist zu demonstrieren. Das ist die Mannschaft auch den Zuschauern schuldig. 
 		\n\nDer Kader ist mit 13 Spielerinnen relativ klein. Leider sind einige Abgänge zu verzeichnen: Julia Kerssens und Sabrina Fischer haben die Handballschuhe zwar nicht ganz an den Nagel gehängt, sich aber aus der Damenmannschaft verabschiedet. Julia Gutbrod ist zurzeit in Australien und wird erst nach Saisonstart zurückkommen. Wann sich Katja Gall nach ihrer Babypause zurückmeldet ist noch unsicher. Sowohl bei Kathrin Ulmer als auch bei Franziska Schmid steht die Entscheidung des Studienorts noch aus. Umso erfreulicher, dass Ulla Diez nach langer Verletzungspause wieder zurückkehrt. Hanna Barner und Nicole Schmid wechseln nach Weilheim.
 		\n\nDie Trainingsbeteiligung in der Vorbereitung ist gut und das Turnier in Owen hat gezeigt, dass viel Potential in der Mannschaft steckt. Bis zu Saisonbeginn gilt es, das auch abrufen zu können. Ein Schwerpunkt dabei ist die Abwehrarbeit, die in der kommenden Saison deutlich flexibler gestaltet werden soll. Im Angriff gilt es, die Chancenverwertung zu verbessern und nicht so schnell den Kopf zu verlieren.
-		\n\nDie Unterstützung der Zuschauer der letzten Saison war super und wir hoffen, dass das noch getoppt werden kann. Wir freuen uns auf einen guten Start und eine erfolgreiche und verletzungsfreie Saison.</string>
+		\n\nDie Unterstützung der Zuschauer der letzten Saison war super und wir hoffen, dass das noch getoppt werden kann. Wir freuen uns auf einen guten Start und eine erfolgreiche und verletzungsfreie Saison.
+</string>
 
-    
+
     <string name="damen2text"><b>Hinten:</b> Vanessa Kamin, Katja Hannig, Svenja Klingmann, Lena Sigel, Katharina Karban, Annette Breuninger.
 \n\n<b>Vorne:</b> Trainer Christo Kiriakidis, Lisa Attinger, Nicole Sigel, Vivien Hohler, Britte Braun, Julia Koser, Isabel Hieber.
 \n\nEs fehlen: Alina Prengel, Anne Fetzer, Laura Tremmel, Sarina Schmid, Wiebke Schwebke.
@@ -125,8 +130,8 @@
 \n\nZudem musste man sich von Trainer Alexander Kaufmann trennen, welcher nun seine Zeit voll und ganz der die Familie widmen möchte. Somit übernahm Christo Kiriakidis nun allein die Trainerposition und möchte in seinem dritten Jahr als Trainer der „zweiten“ wieder neu angreifen. So kämpften sich die Mädels durch eine verschärfte Vorbereitung und versuchten durch intensive Trainingseinheiten Kraft, Ausdauer und Überblick über ihr Spiel zu gewinnen.
 \n\nJetzt zählt es, die gemachten Erfahrungen und den spielerischen Fortschritt in der Liga umsetzen zu können. Somit vertrauen die Mädels auch weiterhin auf den tollen Rückhalt ihrer Fans bei den kom-menden Spielen auswärts sowie in der Lindachsporthalle.
  </string>
- 
-    
+
+
     <string name="jstext"><b>Junge Senioren – Ü40</b>
 \n\nNach einem weiteren Jahr hartem Kampf mussten wir uns leider eingestehen, dass wir nur noch an Sahnetagen mit anderen Jungsenioren über die volle Distanz mithalten können - und diese Tage kommen leider immer seltener…Nachdem nun auch noch der ‚Nachwuchs‘ fehlt, haben wir uns schweren Herzens entschlossen, dieses Jahr nur für die Ü40-Runde zu melden, zumal fast alle das Schwabenalter erreicht haben!
 Wir werden uns auch diese Runde nicht unterkriegen lassen und wollen nach den ernüchternden Ergebnissen der Vorsaison die Kräfte bündeln und vorne angreifen. Gas geben wollen wir auch im Training – hier freuen wir uns auf ein paar heiße Duelle mit der M2 – und natürlich wird auch der Spaß und die Geselligkeit nach dem Training nicht zu kurz kommen!
@@ -138,9 +143,14 @@ Unter diesem Motto hat sich diese Saison seit langem wieder eine AD-Mannschaft (
 \n\nDer Mix der Spielerinnen ist super: Neben Wiedereinsteigerinnen und aktiven Spielerinnen sind auch schon Youngsters mit dabei - denn wir wissen alle, dass Nachwuchsarbeit sehr wichtig ist. Bereits in den ersten Trainingseinheiten hat sich gezeigt, dass zwar der Spaß eindeutig im Vordergrund steht, aber es trotzdem Jede noch wissen will und es geht immer mit Ehrgeiz zur Sache.
 \n\nDie Trainingszeit am Freitagabend macht ein anschließendes Zusammensitzen, auch mit den Jungsenioren, möglich und es bleibt zum Glück das ganz Wochenende, um sich von der Anstrengung zu erholen.
 \n\nLeider kommt aufgrund zu weniger Mannschaftsmeldungen keine offizielle Spielrunde 2014/15 zustande. Wir werden deshalb versuchen den ein oder anderen Gegner für ein Trainingsspiel oder ein kleines Turnier zu finden. 
-\n\nWir freuen uns natürlich über Jede, die Spaß am Handball und der 3. Halbzeit hat und gerne bei uns dabei sein möchte!</string>
+\n\nWir freuen uns natürlich über Jede, die Spaß am Handball und der 3. Halbzeit hat und gerne bei uns dabei sein möchte!
+</string>
     <string name="title_activity_impressum">TSV Weilheim - Impressum</string>
     <string name="title_activity_organisation_menu">TSV Weilheim - Organisation</string>
     <string name="title_activity_show_orga">ShowOrgaActivity</string>
+    <string name="title_activity_team_selection">TeamSelectionActivity</string>
+    <string name="title_home">Männer und Frauen</string>
+    <string name="title_youth">Jugend</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>

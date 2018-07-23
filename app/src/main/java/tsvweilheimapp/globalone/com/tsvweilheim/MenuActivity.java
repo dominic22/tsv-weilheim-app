@@ -34,7 +34,7 @@ public class MenuActivity extends Activity implements OnClickListener{
 			startActivity(i1);
 			break;
 		case R.id.btnTeams:
-			Intent i2 = new Intent(this, TeamsActivity.class);
+			Intent i2 = new Intent(this, TeamSelectionActivity.class);
 			i2.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 			startActivity(i2);
 			break;
