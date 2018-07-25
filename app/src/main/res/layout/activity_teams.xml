@@ -64,7 +64,7 @@
                             android:layout_marginLeft="2dp"
                             android:text="H1"
                             android:textColor="@color/White"
-                            android:textSize="60dp" />
+                            android:textSize="60sp" />
 
                         <TextView
                             android:id="@+id/textView2"

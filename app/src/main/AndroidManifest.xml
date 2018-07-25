@@ -69,7 +69,7 @@
             android:name=".TeamSelectionActivity"
             android:label="@string/title_activity_team_selection"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>
