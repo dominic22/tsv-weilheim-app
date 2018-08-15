@@ -13,8 +13,7 @@ import android.widget.TextView;
 import tsvweilheimapp.globalone.com.tsvweilheim.R;
 
 
-//TEAMVIEW
-public class Fragment3 extends Fragment {
+public class TeamFragment extends Fragment {
     WebView webView;
 
     @Override

@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
-public class Fragment4 extends ListFragment implements OnItemClickListener {
+public class NewsFragment extends ListFragment implements OnItemClickListener {
     // Tablelayout in Fragment 3 hinzuf�gen..
     // Dann dort die daten eintragen..
 
@@ -54,7 +54,6 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
     // private static final String READ_COMMENTS_URL =
     // "http://www.mybringback.com/webservice/comments.php";
 
-    TextView txtComments;
     // JSON IDS:
 
     private static final String TAG_SUCCESS = "success";
@@ -87,13 +86,13 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
 
     static FragmentAdapter m_context;
 
-    public Fragment4() {
+    public NewsFragment() {
 
     }
 
     int index;
 
-    public Fragment4(FragmentAdapter fmAdapter) {
+    public NewsFragment(FragmentAdapter fmAdapter) {
         m_context = fmAdapter;
     }
 
@@ -101,7 +100,7 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        Log.v("Fragment3", "beginn");
+        Log.v("TeamFragment", "beginn");
         rootView = inflater.inflate(R.layout.berichte, container, false);
 
         String receivedMannschaft = getActivity().getIntent().getStringExtra(
@@ -123,9 +122,9 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
 
         if (m_context.getM_item() == 3) {
             if (mCommentList == null) {
-                Log.v("Fragment3", "vor load comments");
+                Log.v("TeamFragment", "vor load comments");
                 tryToLoadComments();
-                Log.v("Fragment3", "nach load comments");
+                Log.v("TeamFragment", "nach load comments");
             }
         }
 
@@ -262,9 +261,9 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
         if (menuVisible && rootView != null && m_context.getM_item() == 3) {
             if (mCommentList == null) {
                 // Los gehts ;)
-                Log.v("Fragment3", "vor load comments");
+                Log.v("TeamFragment", "vor load comments");
                 tryToLoadComments();
-                Log.v("Fragment3", "nach load comments");
+                Log.v("TeamFragment", "nach load comments");
             }
         }
     }
@@ -295,8 +294,8 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = ProgressDialog.show(getActivity(), "Lade Berichte...",
-                    "Bitte warten...", true);
+//            pDialog = ProgressDialog.show(getActivity(), "Lade Berichte...",
+//                    "Bitte warten...", true);
         }
 
         @Override
@@ -313,7 +312,7 @@ public class Fragment4 extends ListFragment implements OnItemClickListener {
         @Override
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
-            pDialog.dismiss();
+//            pDialog.dismiss();
             updateList();
         }
 

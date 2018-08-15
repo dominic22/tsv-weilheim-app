@@ -1,6 +1,5 @@
 package tsvweilheimapp.globalone.com.tsvweilheim.viewswitcher;
 
-
 import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -12,7 +11,6 @@ import android.util.Log;
 
 import tsvweilheimapp.globalone.com.tsvweilheim.R;
 
-
 public class MainSwitcherActivity extends android.support.v4.app.FragmentActivity implements
 		ActionBar.TabListener {
 
@@ -21,10 +19,9 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 	private ActionBar actionBar;
 //	http://code.tutsplus.com/tutorials/android-compatibility-working-with-fragments--mobile-5431
 	// Tab titles
-	private String[] tabs = { "Mannschaft", "Tabelle", "Spiele", "Berichte" };
+	private String[] tabs = { "Spiele", "Tabelle", "Berichte", "Mannschaft" };
 
-	private static final int[] ICONS = new int[] { R.drawable.team,
-			R.drawable.spiele, R.drawable.spielplan, R.drawable.news, };
+	private static final int[] ICONS = new int[] { R.drawable.spiele, R.drawable.spielplan, R.drawable.news, R.drawable.team };
 
 	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 	@Override
@@ -83,7 +80,7 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 
 	@Override
 	public void onTabSelected(Tab tab, android.app.FragmentTransaction ft) {
-		Log.v("SELECTED","UNTEN");
+		Log.v("SELECTED","UNTEN!!!!! " + tab.getPosition());
 		mAdapter.setM_item(tab.getPosition());
 		viewPager.setCurrentItem(tab.getPosition());
 	}

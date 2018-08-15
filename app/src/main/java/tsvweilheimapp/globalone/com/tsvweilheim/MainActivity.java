@@ -69,7 +69,7 @@ public class MainActivity extends ListActivity {
 			new LoadComments().execute();
 		}
 		else{
-			new AlertDialog.Builder(this).setTitle("Keine Internetverbindung!").setMessage("Bitte �berpr�fen Sie Ihre Internetverbindung.").setPositiveButton("OK", new DialogInterface.OnClickListener() {
+			new AlertDialog.Builder(this).setTitle("Keine Internetverbindung!").setMessage("Bitte überprüfen Sie Ihre Internetverbindung.").setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int which) {

@@ -25,45 +25,33 @@ import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.SpielplanPullParser;
 
 import java.io.FileNotFoundException;
 
-//SPIELPLAN VIEW
-public class Fragment2 extends Fragment {
-
-    //Gleich Wie MAINXML.java
-
+public class ScheduleFragment extends Fragment {
     private TableLayout tableLayoutLetzteWoche;
     private TableRow tableRowLetzteWoche;
-
-
     static private SpielplanAdapter mAdapter;
 
-
     String SpielplanURL = "";
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.layout_spielerg, container, false);
-        Log.v("Log:", "Beginn onCreate");
-
-
         tableLayoutLetzteWoche = rootView.findViewById(R.id.tableSpielergebnis);
-
         String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
         if (receivedMannschaft.equals("erste")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/cutout.php?site=erste&type=table";
+            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=erste&type=table";
         } else if (receivedMannschaft.equals("zweite")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/cutout.php?site=zweite&type=table";
+            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=zweite&type=table";
         } else if (receivedMannschaft.equals("damen")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/cutout.php?site=damen&type=table";
+            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=damen&type=table";
         } else if (receivedMannschaft.equals("damen2")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/cutout.php?site=damen2&type=table";
+            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=damen2&type=table";
         } else if (receivedMannschaft.equals("js")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/cutout.php?site=js&type=table";
+            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=js&type=table";
         } else if (receivedMannschaft.equals("ad")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/cutout.php?site=ad&type=table";
+            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=ad&type=table";
         }
 
         /*
@@ -236,10 +224,7 @@ public class Fragment2 extends Fragment {
         tableRowLetzteWoche.addView(textview3);
         tableRowLetzteWoche.addView(textview4);
         tableRowLetzteWoche.addView(textview5);
-        Log.v("Ende initLetteWoche", "GLEIC FEHLER");
         tableLayoutLetzteWoche.addView(tableRowLetzteWoche);
-
-        Log.v("Ende initLetteWoche", "Doch KEIN FEHLER???");
     }
 
     String splitString(String str) {

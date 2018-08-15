@@ -28,8 +28,7 @@ import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.StackSite;
 
 import java.io.FileNotFoundException;
 
-//TABELLE VIEW
-public class Fragment1 extends Fragment {
+public class ScoreFragment extends Fragment {
 
     private static final int TopBottomMargin = 12;
 
@@ -51,18 +50,13 @@ public class Fragment1 extends Fragment {
     private SitesAdapter mAdapterLetzteWoche;
     View rootView;
 
-    int hilfsVariable = 0;
-
-
     static FragmentAdapter m_context;
 
-    public Fragment1() {
+    public ScoreFragment() {
 
     }
 
-    int index;
-
-    public Fragment1(FragmentAdapter fmAdapter) {
+    public ScoreFragment(FragmentAdapter fmAdapter) {
         m_context = fmAdapter;
     }
 
@@ -109,7 +103,6 @@ public class Fragment1 extends Fragment {
                 download.execute();
             }
         }
-
 
         return rootView;
     }
@@ -163,7 +156,7 @@ public class Fragment1 extends Fragment {
         new AlertDialog.Builder(getActivity())
                 .setTitle("Keine Internetverbindung!")
                 .setMessage(
-                        "Bitte �berpr�fen Sie Ihre Internetverbindung.")
+                        "Bitte überprüfen Sie Ihre Internetverbindung.")
                 .setPositiveButton("OK",
                         new DialogInterface.OnClickListener() {
 
@@ -179,8 +172,8 @@ public class Fragment1 extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = ProgressDialog.show(getActivity(), "Lade Tabelle...",
-                    "Bitte warten...", true);
+//            pDialog = ProgressDialog.show(getActivity(), "Lade Tabelle...",
+//                    "Bitte warten...", true);
         }
 
         @Override
@@ -208,7 +201,7 @@ public class Fragment1 extends Fragment {
         @Override
         protected void onPostExecute(Void result) {
             try {
-                pDialog.dismiss();
+//                pDialog.dismiss();
                 // setup our Adapter and set it to the ListView.
                 mAdapter = new SitesAdapter(getActivity()
                         .getApplicationContext(), -1,
@@ -315,10 +308,7 @@ public class Fragment1 extends Fragment {
 
             textview3.setText(text);
             textview3.setTextSize(textGroesse);
-            // textview3.setBackgroundResource(R.color.LightGrey);
-
         }
-
     }
 
     void initTableLetzteWoche() {
@@ -363,8 +353,7 @@ public class Fragment1 extends Fragment {
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT,
                 android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
         llp.setMargins(0, TopBottomMargin, 0, TopBottomMargin); // llp.setMargins(left,
-        // top, right,
-        // bottom);
+        // top, right, bottom);
 
         TableRow.LayoutParams llp2 = new TableRow.LayoutParams(
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT,

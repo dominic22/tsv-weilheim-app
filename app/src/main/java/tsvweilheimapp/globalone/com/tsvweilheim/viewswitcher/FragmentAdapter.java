@@ -4,15 +4,8 @@ import android.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.util.Log;
-
-
-
-
 
 public class FragmentAdapter extends FragmentPagerAdapter {
- 
-	static Fragment f1,f2,f3,f4;
 	static int m_item;
 	
 	public int getM_item(){
@@ -48,23 +41,16 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
 	@Override
     public Fragment getItem(int index) {
- 
         switch (index) {
         case 0:
-        	Log.v("erstellt Fragment 3","asd");
-        	f3= new Fragment3();
-        	return f3;
+            return new ScoreFragment(fmAdapter);
         case 1:
-        	Log.v("erstellt Fragment 1","asd");
-        	return new Fragment1(fmAdapter);
+            return new ScheduleFragment();
         case 2:
-        	Log.v("erstellt Fragment 2","asd");
-        	return new Fragment2();
+            return new NewsFragment(fmAdapter);
         case 3:
-	    	Log.v("erstellt Fragment 4","asd");
-	    	return new Fragment4(fmAdapter);
+			return new TeamFragment();
 	    }
-
         return null;
     }
  
@@ -73,5 +59,4 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         // get item count - equal to number of tabs
         return 4;
     }
- 
 }
