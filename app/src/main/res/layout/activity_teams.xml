@@ -3,7 +3,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@color/Red"
-    
+    android:theme="@style/AppTheme"
     >
 
     <ScrollView
@@ -15,24 +15,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical"            
             android:weightSum="9" >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Large Text"
-                    android:visibility="invisible"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/TextView01"
@@ -63,6 +48,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
                             android:text="H1"
+                            android:textAllCaps="false"
                             android:textColor="@color/White"
                             android:textSize="60sp" />
 

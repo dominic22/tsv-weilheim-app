@@ -2,40 +2,38 @@ package tsvweilheimapp.globalone.com.tsvweilheim;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ShowOrgaActivity extends Activity {
 
-    ImageView image;
-    TextView txtString;
+    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_orga);
-        image = findViewById(R.id.imageOrga);
-        txtString = findViewById(R.id.txtOrga);
+        webView = findViewById(R.id.webView);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
         String receivedParameter = getIntent().getStringExtra("Parameter");
+        String baseUrl = "http://android.handball-weilheim.de/webhandball/team_webview.php?site=";
 
         if (receivedParameter.equals("vorstand")) {
-            image.setBackgroundResource(R.drawable.vs600x340);
-            txtString.setText(R.string.vorstandtext);
+            webView.loadUrl(baseUrl + "vs");
             this.getActionBar().setTitle("TSV Weilheim - Vorstand");
         } else if (receivedParameter.equals("jugendleitung")) {
-            image.setBackgroundResource(R.drawable.jl);
-            txtString.setText(R.string.jugendleitungtext);
+            webView.loadUrl(baseUrl + "jl");
             this.getActionBar().setTitle("TSV Weilheim - Jugendleitung");
         } else if (receivedParameter.equals("wirtschaftsausschuss")) {
-            image.setBackgroundResource(R.drawable.wa600x340);
-            txtString.setText(R.string.wirtschaftsausschusstext);
+            webView.loadUrl(baseUrl + "wa");
             this.getActionBar().setTitle("TSV Weilheim - Wirtschaftsasschuss");
         } else if (receivedParameter.equals("foerderverein")) {
-            image.setBackgroundResource(R.drawable.vf);
-            txtString.setText(R.string.foerdervereintext);
+            webView.loadUrl(baseUrl + "fv");
             this.getActionBar().setTitle("TSV Weilheim - F�rderverein");
         }
-
     }
 
     @Override

@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,43 +15,34 @@ import tsvweilheimapp.globalone.com.tsvweilheim.R;
 
 //TEAMVIEW
 public class Fragment3 extends Fragment {
-	ImageView imageView;
-	TextView txtBericht;
+    WebView webView;
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment3, container, false);
+        View rootView = inflater.inflate(R.layout.fragment3, container, false);
+        webView = rootView.findViewById(R.id.webView);
+        String receivedMannschaft = getActivity().getIntent().getStringExtra(
+                "Mannschaft");
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        String baseUrl = "http://android.handball-weilheim.de/webhandball/team_webview.php?site=";
 
-		imageView = rootView.findViewById(R.id.imageTeam);
-		txtBericht = rootView.findViewById(R.id.txtTeamBericht);
+        if (receivedMannschaft.equals("erste")) {
+            webView.loadUrl(baseUrl + "erste");
+        } else if (receivedMannschaft.equals("zweite")) {
+            webView.loadUrl(baseUrl + "zweite");
+        } else if (receivedMannschaft.equals("damen")) {
+            webView.loadUrl(baseUrl + "damen");
+        } else if (receivedMannschaft.equals("damen2")) {
+            webView.loadUrl(baseUrl + "damen2");
+        } else if (receivedMannschaft.equals("js")) {
+            webView.loadUrl(baseUrl + "js");
+        } else if (receivedMannschaft.equals("ad")) {
+            webView.loadUrl(baseUrl + "ad");
+        }
 
-		String receivedMannschaft = getActivity().getIntent().getStringExtra(
-				"Mannschaft");
-
-		if (receivedMannschaft.equals("erste")) {
-			imageView.setBackgroundResource(R.drawable.herren1);
-			txtBericht.setText(R.string.herren1text);
-
-		} else if (receivedMannschaft.equals("zweite")) {
-			imageView.setBackgroundResource(R.drawable.herren2);
-			txtBericht.setText(R.string.herren2text);
-
-		} else if (receivedMannschaft.equals("damen")) {
-			imageView.setBackgroundResource(R.drawable.damen1);
-			txtBericht.setText(R.string.damen1text);
-		} else if (receivedMannschaft.equals("damen2")) {
-			imageView.setBackgroundResource(R.drawable.damen2);
-			txtBericht.setText(R.string.damen2text);
-		}else if (receivedMannschaft.equals("js")) {
-			imageView.setBackgroundResource(R.drawable.js);
-			txtBericht.setText(R.string.jstext);
-		}else if (receivedMannschaft.equals("ad")) {
-			imageView.setBackgroundResource(R.drawable.ad);
-			txtBericht.setText(R.string.adtext);
-		}
-
-		return rootView;
-	}
+        return rootView;
+    }
 }
