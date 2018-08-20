@@ -14,33 +14,15 @@ import tsvweilheimapp.globalone.com.tsvweilheim.teamselection.AdultTeamsFragment
 
 public class TeamSelectionActivity extends AppCompatActivity {
 
-//    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-//            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-//
-//        @Override
-//        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//            switch (item.getItemId()) {
-//                case R.id.navigation_home:
-//                    return true;
-//                case R.id.navigation_dashboard:
-//                    return true;
-//            }
-//            return false;
-//        }
-//    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_selection);
-
-        //BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        //navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         setupNavigationView();
     }
 
     private void setupNavigationView() {
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         if (bottomNavigationView != null) {
 
             // Select first menu item by default and show Fragment accordingly.

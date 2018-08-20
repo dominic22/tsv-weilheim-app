@@ -31,12 +31,6 @@ import java.io.FileNotFoundException;
 public class ScoreFragment extends Fragment {
 
     private static final int TopBottomMargin = 12;
-
-    // Progress Dialog ProgressDialog
-    private ProgressDialog pDialog;
-
-    // Gleich Wie MAINXML.java
-
     private TableLayout tableLayoutLetzteWoche;
     private TableRow tableRowLetzteWoche;
 
@@ -97,7 +91,7 @@ public class ScoreFragment extends Fragment {
             UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=ad&type=table";
         }
 
-        if (m_context.getM_item() == 1) {
+        if (m_context.getM_item() == 0 || m_context.getM_item() == 1) {
             if (tableLayout.getChildCount() == 0 || tableLayoutLetzteWoche.getChildCount() == 0) {
                 SitesDownloadTask download = new SitesDownloadTask();
                 download.execute();

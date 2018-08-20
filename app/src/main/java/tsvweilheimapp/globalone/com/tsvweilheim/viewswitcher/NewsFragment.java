@@ -1,6 +1,5 @@
 package tsvweilheimapp.globalone.com.tsvweilheim.viewswitcher;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -16,7 +15,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import tsvweilheimapp.globalone.com.tsvweilheim.FullContentActivity;
 import tsvweilheimapp.globalone.com.tsvweilheim.JSONParser;
@@ -32,14 +30,6 @@ import java.util.HashMap;
 
 
 public class NewsFragment extends ListFragment implements OnItemClickListener {
-    // Tablelayout in Fragment 3 hinzuf�gen..
-    // Dann dort die daten eintragen..
-
-    // Progress Dialog ProgressDialog
-    private ProgressDialog pDialog;
-
-    // php read comments script
-
     // localhost :
     // testing on your device
     // put your local ip instead, on windows, run CMD > ipconfig
@@ -90,8 +80,6 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
 
     }
 
-    int index;
-
     public NewsFragment(FragmentAdapter fmAdapter) {
         m_context = fmAdapter;
     }
@@ -120,11 +108,11 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
             READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=ad";
         }
 
-        if (m_context.getM_item() == 3) {
+        if (m_context.getM_item() == 1 || m_context.getM_item() == 2 || m_context.getM_item() == 3) {
             if (mCommentList == null) {
-                Log.v("TeamFragment", "vor load comments");
+                Log.v("NewsFragment", "before load comments");
                 tryToLoadComments();
-                Log.v("TeamFragment", "nach load comments");
+                Log.v("NewsFragment", "after load comments");
             }
         }
 
@@ -158,6 +146,10 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
 
         mCommentList = new ArrayList<HashMap<String, String>>();
 
+
+
+        // TODO httpClient is obsolete, use OkHttp or HttpUrlConnection
+
         // Bro, it's time to power up the J parser
         JSONParser jParser = new JSONParser();
         // Feed the beast our comments url, and it spits us
@@ -165,7 +157,7 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
         JSONObject json = jParser.getJSONFromUrl(READ_COMMENTS_URL);
 
         // when parsing JSON stuff, we should probably
-        // try to catch any exceptions:
+        // try to catch any  exceptions:
         try {
 
             // I know I said we would check if "Posts were Avail." (success==1)
@@ -280,7 +272,6 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
 
             // I shouldn't have to comment on this one:
             setListAdapter(adapter);
-            Log.v("asd", "Holitem");
 
             // GEHT NUR HIER SONST EXCEPTION OL
             lv = getListView();
@@ -294,25 +285,22 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-//            pDialog = ProgressDialog.show(getActivity(), "Lade Berichte...",
-//                    "Bitte warten...", true);
         }
 
         @Override
         protected Boolean doInBackground(Void... arg0) {
             try {
                 updateJSONdata();
-            } catch (Exception EX2) {
-
+            } catch (Exception e) {
+                Log.e("Error", e.getMessage());
+                e.printStackTrace();
             }
             return null;
-
         }
 
         @Override
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
-//            pDialog.dismiss();
             updateList();
         }
 
