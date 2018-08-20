@@ -40,19 +40,7 @@ public class ScheduleFragment extends Fragment {
         tableLayoutLetzteWoche = rootView.findViewById(R.id.tableSpielergebnis);
         String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
-        if (receivedMannschaft.equals("erste")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=erste&type=table";
-        } else if (receivedMannschaft.equals("zweite")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=zweite&type=table";
-        } else if (receivedMannschaft.equals("damen")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=damen&type=table";
-        } else if (receivedMannschaft.equals("damen2")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=damen2&type=table";
-        } else if (receivedMannschaft.equals("js")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=js&type=table";
-        } else if (receivedMannschaft.equals("ad")) {
-            SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=ad&type=table";
-        }
+        SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=" + receivedMannschaft + "&type=table";
 
         /*
          * If network is available download the xml from the Internet. If not
@@ -70,10 +58,8 @@ public class ScheduleFragment extends Fragment {
                     SpielplanPullParser.getSpielplanFromFile(getActivity()));
         }
 
-
         return rootView;
     }
-
 
     public boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -81,7 +67,6 @@ public class ScheduleFragment extends Fragment {
                 .getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
-
 
     public class SpielplanDownloadTask extends AsyncTask<Void, Void, Void> {
 
@@ -146,6 +131,18 @@ public class ScheduleFragment extends Fragment {
                 text = "Spielplan Jungsenioren";
             } else if (receivedMannschaft.equals("ad")) {
                 text = "Spielplan Attraktive Damen";
+            } else if (receivedMannschaft.equals("a_maennlich")) {
+                text = "Spielplan A Jugend Männlich";
+            } else if (receivedMannschaft.equals("a_weiblich")) {
+                text = "Spielplan A Jugend Weiblich";
+            } else if (receivedMannschaft.equals("b_maennlich")) {
+                text = "Spielplan B Jugend Männlich";
+            } else if (receivedMannschaft.equals("b_weiblich")) {
+                text = "Spielplan B Jugend Weiblich";
+            } else if (receivedMannschaft.equals("c_maennlich")) {
+                text = "Spielplan C Jugend Männlich";
+            } else if (receivedMannschaft.equals("c_weiblich")) {
+                text = "Spielplan C Jugend Weiblich";
             }
 
 

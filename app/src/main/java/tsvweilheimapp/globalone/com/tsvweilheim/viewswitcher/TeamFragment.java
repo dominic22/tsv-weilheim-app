@@ -28,20 +28,7 @@ public class TeamFragment extends Fragment {
         webSettings.setJavaScriptEnabled(true);
         String baseUrl = "http://android.handball-weilheim.de/webhandball/team_webview.php?site=";
 
-        if (receivedMannschaft.equals("erste")) {
-            webView.loadUrl(baseUrl + "erste");
-        } else if (receivedMannschaft.equals("zweite")) {
-            webView.loadUrl(baseUrl + "zweite");
-        } else if (receivedMannschaft.equals("damen")) {
-            webView.loadUrl(baseUrl + "damen");
-        } else if (receivedMannschaft.equals("damen2")) {
-            webView.loadUrl(baseUrl + "damen2");
-        } else if (receivedMannschaft.equals("js")) {
-            webView.loadUrl(baseUrl + "js");
-        } else if (receivedMannschaft.equals("ad")) {
-            webView.loadUrl(baseUrl + "ad");
-        }
-
+        webView.loadUrl(baseUrl + receivedMannschaft);
         return rootView;
     }
 }

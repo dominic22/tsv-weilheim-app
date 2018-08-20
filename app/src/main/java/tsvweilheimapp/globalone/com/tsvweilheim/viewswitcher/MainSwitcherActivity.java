@@ -60,7 +60,6 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 			public void onPageSelected(int position) {
 				// on changing the page
 				// make respected tab selected
-				Log.v("SELECTED","NEUU" + String.valueOf(position));
 				actionBar.setSelectedNavigationItem(position);
 			}
 
@@ -80,7 +79,6 @@ public class MainSwitcherActivity extends android.support.v4.app.FragmentActivit
 
 	@Override
 	public void onTabSelected(Tab tab, android.app.FragmentTransaction ft) {
-		Log.v("SELECTED","UNTEN!!!!! " + tab.getPosition());
 		mAdapter.setM_item(tab.getPosition());
 		viewPager.setCurrentItem(tab.getPosition());
 	}

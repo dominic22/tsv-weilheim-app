@@ -30,7 +30,7 @@
                     android:layout_weight="1" >
 
                     <Button
-                        android:id="@+id/btnHerren1"
+                        android:id="@+id/btn00"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#222222" />
@@ -47,7 +47,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
-                            android:text="H1"
+                            android:text="AM"
                             android:textAllCaps="false"
                             android:textColor="@color/White"
                             android:textSize="60sp" />
@@ -58,7 +58,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-4dp"
-                            android:text="Herren 1"
+                            android:text="A Männlich"
                             android:textColor="@color/White" />
                     </LinearLayout>
                 </FrameLayout>
@@ -69,7 +69,7 @@
                     android:layout_weight="1" >
 
                     <Button
-                        android:id="@+id/btnHerren2"
+                        android:id="@+id/btn01"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#333333"
@@ -88,7 +88,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
-                            android:text="H2"
+                            android:text="AW"
                             android:textColor="@color/White"
                             android:textSize="60dp" />
 
@@ -98,7 +98,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-4dp"
-                            android:text="Herren 2"
+                            android:text="A Weiblich"
                             android:textColor="@color/White" />
                     </LinearLayout>
                 </FrameLayout>
@@ -116,7 +116,7 @@
                     android:layout_weight="3" >
 
                     <Button
-                        android:id="@+id/btnDamen1"
+                        android:id="@+id/btn10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#444444"
@@ -135,7 +135,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
-                            android:text="D1"
+                            android:text="BM"
                             android:textColor="@color/White"
                             android:textSize="60dp" />
 
@@ -145,7 +145,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-4dp"
-                            android:text="Damen 1"
+                            android:text="B Männlich"
                             android:textColor="@color/White" />
                     </LinearLayout>
                 </FrameLayout>
@@ -156,7 +156,7 @@
                     android:layout_weight="3" >
 
                     <Button
-                        android:id="@+id/btnDamen2"
+                        android:id="@+id/btn11"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#555555"
@@ -175,7 +175,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
-                            android:text="D2"
+                            android:text="BW"
                             android:textColor="@color/White"
                             android:textSize="60dp" />
 
@@ -185,7 +185,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-4dp"
-                            android:text="Damen 2"
+                            android:text="B Weilbich"
                             android:textColor="@color/White" />
                     </LinearLayout>
                 </FrameLayout>
@@ -203,7 +203,7 @@
                     android:layout_weight="3" >
 
                     <Button
-                        android:id="@+id/btnJS"
+                        android:id="@+id/btn20"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#666666"
@@ -222,7 +222,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
-                            android:text="JS"
+                            android:text="CM"
                             android:textColor="@color/White"
                             android:textSize="60dp" />
 
@@ -232,7 +232,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-4dp"
-                            android:text="Jungsenioren"
+                            android:text="C Männlich"
                             android:textColor="@color/White" />
                     </LinearLayout>
                 </FrameLayout>
@@ -243,7 +243,7 @@
                     android:layout_weight="3" >
 
                     <Button
-                        android:id="@+id/btnAD"
+                        android:id="@+id/btn21"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#777777"
@@ -262,7 +262,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="2dp"
-                            android:text="AD"
+                            android:text="CW"
                             android:textColor="@color/White"
                             android:textSize="60dp" />
 
@@ -272,7 +272,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-4dp"
-                            android:text="Attraktive Damen"
+                            android:text="C Weiblich"
                             android:textColor="@color/White" />
                     </LinearLayout>
                 </FrameLayout>

@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import tsvweilheimapp.globalone.com.tsvweilheim.teamselection.TeamSelectionActivity;
+
 public class MenuActivity extends Activity implements OnClickListener{
 
 	Button btnNews,btnTeams,btnImpressum,btnOrga;

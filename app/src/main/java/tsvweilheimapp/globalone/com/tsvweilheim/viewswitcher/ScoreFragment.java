@@ -58,38 +58,14 @@ public class ScoreFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.v("ONCREATEVIEW", "GO");
+        rootView = inflater.inflate(R.layout.activity_parse_xml, container, false);
 
-        rootView = inflater.inflate(R.layout.activity_parse_xml,
-                container, false);
+        tableLayout = rootView.findViewById(R.id.tableLayoutTabelle);
+        tableLayoutLetzteWoche = rootView.findViewById(R.id.tableLayoutLetzteWoche);
+        String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
-        tableLayout = rootView
-                .findViewById(R.id.tableLayoutTabelle);
-        tableLayoutLetzteWoche = rootView
-                .findViewById(R.id.tableLayoutLetzteWoche);
-
-        String receivedMannschaft = getActivity().getIntent().getStringExtra(
-                "Mannschaft");
-
-        if (receivedMannschaft.equals("erste")) {
-            UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=erste&type=table";
-            UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=erste&type=table";
-        } else if (receivedMannschaft.equals("zweite")) {
-            UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=zweite&type=table";
-            UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=zweite&type=table";
-        } else if (receivedMannschaft.equals("damen")) {
-            UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=damen&type=table";
-            UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=damen&type=table";
-        } else if (receivedMannschaft.equals("damen2")) {
-            UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=damen2&type=table";
-            UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=damen2&type=table";
-        } else if (receivedMannschaft.equals("js")) {
-            UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=js&type=table";
-            UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=js&type=table";
-        } else if (receivedMannschaft.equals("ad")) {
-            UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=ad&type=table";
-            UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=ad&type=table";
-        }
+        UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=" + receivedMannschaft + "&type=table";
+        UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=" + receivedMannschaft + "&type=table";
 
         if (m_context.getM_item() == 0 || m_context.getM_item() == 1) {
             if (tableLayout.getChildCount() == 0 || tableLayoutLetzteWoche.getChildCount() == 0) {
@@ -253,6 +229,18 @@ public class ScoreFragment extends Fragment {
                 text = "Spielergebnisse Jungsenioren";
             } else if (receivedMannschaft.equals("ad")) {
                 text = "Spielergebnisse Attraktive Damen";
+            } else if (receivedMannschaft.equals("a_maennlich")) {
+                text = "Spielergebnisse A Jugend Männlich";
+            } else if (receivedMannschaft.equals("a_weiblich")) {
+                text = "Spielergebnisse A Jugend Weiblich";
+            } else if (receivedMannschaft.equals("b_maennlich")) {
+                text = "Spielergebnisse B Jugend Männlich";
+            } else if (receivedMannschaft.equals("b_weiblich")) {
+                text = "Spielergebnisse B Jugend Weiblich";
+            } else if (receivedMannschaft.equals("c_maennlich")) {
+                text = "Spielergebnisse C Jugend Männlich";
+            } else if (receivedMannschaft.equals("c_weiblich")) {
+                text = "Spielergebnisse C Jugend Weiblich";
             }
 
             TextView textview2 = getActivity().findViewById(
@@ -287,6 +275,18 @@ public class ScoreFragment extends Fragment {
                 text = "Aktueller Tabellenstand Jungsenioren";
             } else if (receivedMannschaft.equals("ad")) {
                 text = "Aktueller Tabellenstand Attraktive Damen";
+            } else if (receivedMannschaft.equals("a_maennlich")) {
+                text = "Aktueller Tabellenstand  A Männlich";
+            } else if (receivedMannschaft.equals("a_weiblich")) {
+                text = "Aktueller Tabellenstand  A Weiblich";
+            } else if (receivedMannschaft.equals("b_maennlich")) {
+                text = "Aktueller Tabellenstand  B Männlich";
+            } else if (receivedMannschaft.equals("b_weiblich")) {
+                text = "Aktueller Tabellenstand  B Weiblich";
+            } else if (receivedMannschaft.equals("c_maennlich")) {
+                text = "Aktueller Tabellenstand  C Männlich";
+            } else if (receivedMannschaft.equals("c_weiblich")) {
+                text = "Aktueller Tabellenstand  C Weiblich";
             }
 
             TextView textview3 = getActivity().findViewById(

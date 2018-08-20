@@ -1,4 +1,4 @@
-package tsvweilheimapp.globalone.com.tsvweilheim;
+package tsvweilheimapp.globalone.com.tsvweilheim.teamselection;
 
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import tsvweilheimapp.globalone.com.tsvweilheim.teamselection.AdultTeamsFragment;
+import tsvweilheimapp.globalone.com.tsvweilheim.R;
 
 public class TeamSelectionActivity extends AppCompatActivity {
 
@@ -52,7 +52,7 @@ public class TeamSelectionActivity extends AppCompatActivity {
                 break;
             case R.id.navigation_dashboard:
                 // Action to perform when Bag Menu item is selected.
-                pushFragment(new AdultTeamsFragment());
+                pushFragment(new YouthTeamsFragment());
                 break;
         }
     }

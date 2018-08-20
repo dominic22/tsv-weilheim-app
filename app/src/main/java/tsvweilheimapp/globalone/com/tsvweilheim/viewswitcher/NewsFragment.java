@@ -87,26 +87,10 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        Log.v("TeamFragment", "beginn");
         rootView = inflater.inflate(R.layout.berichte, container, false);
+        String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
-        String receivedMannschaft = getActivity().getIntent().getStringExtra(
-                "Mannschaft");
-
-        if (receivedMannschaft.equals("erste")) {
-            READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=erste";
-        } else if (receivedMannschaft.equals("zweite")) {
-            READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=zweite";
-        } else if (receivedMannschaft.equals("damen")) {
-            READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=damen";
-        } else if (receivedMannschaft.equals("damen2")) {
-            READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=damen2";
-        } else if (receivedMannschaft.equals("js")) {
-            READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=js";
-        } else if (receivedMannschaft.equals("ad")) {
-            READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=ad";
-        }
+        READ_COMMENTS_URL = "http://android.handball-weilheim.de/webhandball/berichte.php?site=" + receivedMannschaft;
 
         if (m_context.getM_item() == 1 || m_context.getM_item() == 2 || m_context.getM_item() == 3) {
             if (mCommentList == null) {
@@ -146,11 +130,6 @@ public class NewsFragment extends ListFragment implements OnItemClickListener {
 
         mCommentList = new ArrayList<HashMap<String, String>>();
 
-
-
-        // TODO httpClient is obsolete, use OkHttp or HttpUrlConnection
-
-        // Bro, it's time to power up the J parser
         JSONParser jParser = new JSONParser();
         // Feed the beast our comments url, and it spits us
         // back a JSON object. Boo-yeah Jerome.

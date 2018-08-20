@@ -67,7 +67,7 @@
             android:label="@string/title_activity_show_orga"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".TeamSelectionActivity"
+            android:name=".teamselection.TeamSelectionActivity"
             android:label="@string/title_activity_team_selection"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
