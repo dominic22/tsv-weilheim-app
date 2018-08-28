@@ -14,7 +14,7 @@ import tsvweilheimapp.globalone.com.tsvweilheim.viewswitcher.MainSwitcherActivit
 
 public class YouthTeamsFragment extends Fragment implements View.OnClickListener {
 
-    Button btnAM, btnAW, btnBM, btnBW, btnCM, btnCW;
+    Button btnAM, btnAW, btnBM, btnBW, btnCM, btnCW, btnDM, btnDW;
     View rootView;
 
     @Nullable
@@ -28,44 +28,20 @@ public class YouthTeamsFragment extends Fragment implements View.OnClickListener
         btnBW = rootView.findViewById(R.id.btn11);
         btnCM = rootView.findViewById(R.id.btn20);
         btnCW = rootView.findViewById(R.id.btn21);
-
-//        setButtonTexts();
+        btnDM = rootView.findViewById(R.id.btn30);
+        btnDW = rootView.findViewById(R.id.btn31);
 
         btnAM.setOnClickListener(this);
         btnAW.setOnClickListener(this);
         btnBM.setOnClickListener(this);
         btnBW.setOnClickListener(this);
         btnCM.setOnClickListener(this);
-        btnCW.setOnClickListener(this);
+        btnCM.setOnClickListener(this);
+        btnDM.setOnClickListener(this);
+        btnDW.setOnClickListener(this);
+
         return rootView;
     }
-//
-//    void setButtonTexts () {
-//        TextView btn00_t = rootView.findViewById(R.id.btn00_text);
-//        TextView btn00_l =rootView.findViewById(R.id.btn00_label);
-//        TextView btn01_t = rootView.findViewById(R.id.btn01_text);
-//        TextView btn01_l =rootView.findViewById(R.id.btn01_label);
-//        TextView btn10_t = rootView.findViewById(R.id.btn10_text);
-//        TextView btn10_l = rootView.findViewById(R.id.btn10_label);
-//        TextView btn11_t = rootView.findViewById(R.id.btn11_text);
-//        TextView btn11_l =rootView.findViewById(R.id.btn11_label);
-//        TextView btn20_t = rootView.findViewById(R.id.btn20_text);
-//        TextView btn20_l =rootView.findViewById(R.id.btn20_label);
-//        TextView btn21_t = rootView.findViewById(R.id.btn21_text);
-//        TextView btn21_l =rootView.findViewById(R.id.btn21_label);
-//        btn00_t.setText("AM");
-//        btn00_l.setText("A-Männlich");
-//        btn01_t.setText("AW");
-//        btn01_l.setText("A-Weiblich");
-//        btn10_t.setText("BM");
-//        btn10_l.setText("B-Männlich");
-//        btn11_t.setText("BW");
-//        btn11_l.setText("B-Weiblich");
-//        btn20_t.setText("CM");
-//        btn20_l.setText("C-M#nnlich");
-//        btn21_t.setText("CW");
-//        btn21_l.setText("C-Weiblich");
-//    }
 
     @Override
     public void onClick(View v) {
@@ -101,7 +77,16 @@ public class YouthTeamsFragment extends Fragment implements View.OnClickListener
                 i6.putExtra("Mannschaft", "c_weiblich");
                 startActivity(i6);
                 break;
-
+            case R.id.btn30:
+                Intent i7 = new Intent(rootView.getContext(), MainSwitcherActivity.class);
+                i7.putExtra("Mannschaft", "d_maennlich");
+                startActivity(i7);
+                break;
+            case R.id.btn31:
+                Intent i8 = new Intent(rootView.getContext(), MainSwitcherActivity.class);
+                i8.putExtra("Mannschaft", "d_weiblich");
+                startActivity(i8);
+                break;
             default:
                 break;
         }

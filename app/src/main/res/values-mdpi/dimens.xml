@@ -7,6 +7,7 @@
     <dimen name="text_size8">7dp</dimen>
     
      <dimen name="text_size11">8dp</dimen>
-     <dimen name="text_header">11dp</dimen>	
-     
+     <dimen name="text_header">11dp</dimen>
+    <dimen name="padding_top_team_frame">160dp</dimen>
+
 </resources>

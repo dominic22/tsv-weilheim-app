@@ -1,33 +1,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@color/Red"
-    android:theme="@style/AppTheme"
-    >
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-         >
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="vertical"            
-            android:weightSum="9" >
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_team_frame"
+            android:weightSum="9">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3" >
+                android:layout_weight="3">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="190dp"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/btn00"
@@ -66,7 +66,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <Button
                         android:id="@+id/btn01"
@@ -80,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/btn01_text"
@@ -108,12 +108,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="190dp"
-                    android:layout_weight="3" >
+                    android:layout_weight="3">
 
                     <Button
                         android:id="@+id/btn10"
@@ -127,7 +127,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/btn10_text"
@@ -153,7 +153,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="3" >
+                    android:layout_weight="3">
 
                     <Button
                         android:id="@+id/btn11"
@@ -167,7 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/btn11_text"
@@ -195,12 +195,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
-                    android:layout_weight="3" >
+                    android:layout_weight="3">
 
                     <Button
                         android:id="@+id/btn20"
@@ -214,7 +214,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/btn20_text"
@@ -240,7 +240,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="3" >
+                    android:layout_weight="3">
 
                     <Button
                         android:id="@+id/btn21"
@@ -254,7 +254,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/btn21_text"
@@ -280,21 +280,90 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:orientation="vertical" >
+                android:layout_height="match_parent"
+                android:layout_weight="3">
 
-                <TextView
-                    android:id="@+id/TextView12"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Large Text"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:visibility="invisible" />
-            </LinearLayout>
+                    android:layout_height="190dp"
+                    android:layout_weight="1">
 
+                    <Button
+                        android:id="@+id/btn30"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#222222" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/btn30_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:text="DM"
+                            android:textAllCaps="false"
+                            android:textColor="@color/White"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:id="@+id/btn30_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-4dp"
+                            android:text="D Männlich"
+                            android:textColor="@color/White" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#333333"
+                        android:textColor="@color/White"
+                        android:textSize="60dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/btn31_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:text="DW"
+                            android:textColor="@color/White"
+                            android:textSize="60dp" />
+
+                        <TextView
+                            android:id="@+id/btn31_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-4dp"
+                            android:text="D Weiblich"
+                            android:textColor="@color/White" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>
-    
+
 </LinearLayout>

@@ -9,5 +9,6 @@
     <dimen name="text_size11">5sp</dimen>
 
     <dimen name="text_header">10sp</dimen>
+    <dimen name="padding_top_team_frame">160dp</dimen>
 
 </resources>
