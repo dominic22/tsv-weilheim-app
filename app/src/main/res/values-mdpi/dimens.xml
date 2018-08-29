@@ -4,9 +4,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     
-    <dimen name="text_size8">7dp</dimen>
+    <dimen name="text_size8">9dp</dimen>
     
-     <dimen name="text_size11">8dp</dimen>
+     <dimen name="text_size11">9dp</dimen>
      <dimen name="text_header">11dp</dimen>
     <dimen name="padding_top_team_frame">160dp</dimen>
 

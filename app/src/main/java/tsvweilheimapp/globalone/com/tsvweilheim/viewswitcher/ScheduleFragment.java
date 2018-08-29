@@ -18,6 +18,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import tsvweilheimapp.globalone.com.tsvweilheim.R;
+import tsvweilheimapp.globalone.com.tsvweilheim.dialog_adapter.DialogHandler;
 import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.Downloader;
 import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.Spielplan;
 import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.SpielplanAdapter;
@@ -26,10 +27,10 @@ import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.SpielplanPullParser;
 import java.io.FileNotFoundException;
 
 public class ScheduleFragment extends Fragment {
+    private static final int TopBottomMargin = 32;
     private TableLayout tableLayoutLetzteWoche;
     private TableRow tableRowLetzteWoche;
     static private SpielplanAdapter mAdapter;
-
     String SpielplanURL = "";
 
     @Override
@@ -89,7 +90,6 @@ public class ScheduleFragment extends Fragment {
 
         @Override
         protected void onPostExecute(Void result) {
-            Log.v("onPostExecute", "Beginn");
             // setup our Adapter and set it to the ListView.
             mAdapter = new SpielplanAdapter(getActivity().getApplicationContext(), -1,
                     SpielplanPullParser.getSpielplanFromFile(getActivity()));
@@ -102,14 +102,7 @@ public class ScheduleFragment extends Fragment {
             addFirstRow(0);
             initTableLetzteWoche();
             addRowsLetzteWoche(mAdapter);
-
-            Log.v("onPostExecute", "Fertig2");
-            // Hier in for schleife alle durchgehen..
-            // FUER TABELLE
-            // Log.i("StackSites", "adapter size = "+ mAdapter.getCount());
-
         }
-
     }
 
     void addFirstRow(int laufvar) {
@@ -167,7 +160,6 @@ public class ScheduleFragment extends Fragment {
 
     void initTableLetzteWoche() {
         tableRowLetzteWoche = new TableRow(getActivity().getApplicationContext());
-
         tableRowLetzteWoche.setBackgroundResource(R.color.LightGrey);
 
         String strLiga = "Liga";
@@ -197,12 +189,11 @@ public class ScheduleFragment extends Fragment {
 
         TableRow.LayoutParams llp = new TableRow.LayoutParams(
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
-        llp.setMargins(15, 12, 0, 12); // llp.setMargins(left, top, right,
+        llp.setMargins(15, TopBottomMargin, 0, TopBottomMargin); // llp.setMargins(left, top, right,
         // bottom);
-
         TableRow.LayoutParams llp2 = new TableRow.LayoutParams(
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
-        llp2.setMargins(0, 12, 0, 12);        // bottom);
+        llp2.setMargins(0, TopBottomMargin, 0, TopBottomMargin);        // bottom);
 
         tableRowLetzteWoche.setLayoutParams(llp2);
 
@@ -279,12 +270,12 @@ public class ScheduleFragment extends Fragment {
 
             TableRow.LayoutParams llp = new TableRow.LayoutParams(
                     android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
-            llp.setMargins(15, 12, 4, 12); // llp.setMargins(left, top, right,
+            llp.setMargins(15, TopBottomMargin, 4, TopBottomMargin); // llp.setMargins(left, top, right,
             // bottom);
 
             TableRow.LayoutParams llp2 = new TableRow.LayoutParams(
                     android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
-            llp2.setMargins(0, 12, 0, 12); // llp.setMargins(left, top, right,
+            llp2.setMargins(0, TopBottomMargin, 0, TopBottomMargin); // llp.setMargins(left, top, right,
             // bottom);
 
             tableRowLetzteWoche.setLayoutParams(llp2);

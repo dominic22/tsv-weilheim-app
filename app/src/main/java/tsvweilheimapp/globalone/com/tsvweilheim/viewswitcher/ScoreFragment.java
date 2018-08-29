@@ -21,6 +21,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import tsvweilheimapp.globalone.com.tsvweilheim.R;
+import tsvweilheimapp.globalone.com.tsvweilheim.dialog_adapter.DialogHandler;
 import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.Downloader;
 import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.SitesAdapter;
 import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.SitesXmlPullParser;
@@ -30,7 +31,7 @@ import java.io.FileNotFoundException;
 
 public class ScoreFragment extends Fragment {
 
-    private static final int TopBottomMargin = 12;
+    private static final int TopBottomMargin = 32;
     private TableLayout tableLayoutLetzteWoche;
     private TableRow tableRowLetzteWoche;
 
@@ -39,6 +40,7 @@ public class ScoreFragment extends Fragment {
 
     private String UrlLetzteWoche = "";
     private String UrlTabelle = "";
+    private static DialogHandler dialogHandler;
 
     private SitesAdapter mAdapter;
     private SitesAdapter mAdapterLetzteWoche;
@@ -64,6 +66,7 @@ public class ScoreFragment extends Fragment {
         tableLayoutLetzteWoche = rootView.findViewById(R.id.tableLayoutLetzteWoche);
         String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
+        dialogHandler = new DialogHandler(this.getContext());
         UrlTabelle = "http://android.handball-weilheim.de/webhandball/hvwcutout.php?site=" + receivedMannschaft + "&type=table";
         UrlLetzteWoche = "http://android.handball-weilheim.de/webhandball/hvwcutoutlastweek.php?site=" + receivedMannschaft + "&type=table";
 
@@ -241,6 +244,10 @@ public class ScoreFragment extends Fragment {
                 text = "Spielergebnisse C Jugend Männlich";
             } else if (receivedMannschaft.equals("c_weiblich")) {
                 text = "Spielergebnisse C Jugend Weiblich";
+            } else if (receivedMannschaft.equals("d_maennlich")) {
+                text = "Spielergebnisse D Jugend Männlich";
+            } else if (receivedMannschaft.equals("d_weiblich")) {
+                text = "Spielergebnisse D Jugend Weiblich";
             }
 
             TextView textview2 = getActivity().findViewById(
@@ -287,6 +294,10 @@ public class ScoreFragment extends Fragment {
                 text = "Aktueller Tabellenstand  C Männlich";
             } else if (receivedMannschaft.equals("c_weiblich")) {
                 text = "Aktueller Tabellenstand  C Weiblich";
+            } else if (receivedMannschaft.equals("d_maennlich")) {
+                text = "Aktueller Tabellenstand  D Männlich";
+            } else if (receivedMannschaft.equals("d_weiblich")) {
+                text = "Aktueller Tabellenstand  D Weiblich";
             }
 
             TextView textview3 = getActivity().findViewById(
@@ -563,6 +574,15 @@ public class ScoreFragment extends Fragment {
             tableLayout.setShrinkAllColumns(true);
 
             tableRow = new TableRow(getActivity().getApplicationContext());
+            tableRow.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    // TODO Auto-generated method stub
+                    dialogHandler.showDialog();
+                }
+            });
+
             tableRow.setGravity(Gravity.CENTER);
             if (i == 0 || i % 2 == 0)
                 tableRow.setBackgroundResource(R.color.White);

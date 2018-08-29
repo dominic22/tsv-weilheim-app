@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import tsvweilheimapp.globalone.com.tsvweilheim.R;
 
@@ -20,7 +18,7 @@ public class TeamFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment3, container, false);
+        View rootView = inflater.inflate(R.layout.team_webview, container, false);
         webView = rootView.findViewById(R.id.webView);
         String receivedMannschaft = getActivity().getIntent().getStringExtra(
                 "Mannschaft");
