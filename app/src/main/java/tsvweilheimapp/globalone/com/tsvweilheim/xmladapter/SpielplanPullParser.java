@@ -19,6 +19,7 @@ public class SpielplanPullParser {
 	static final String KEY_UHRZEIT = "Uhrzeit";
 	static final String KEY_HEIM = "Heim";
 	static final String KEY_GAST = "Gast";
+	static final String KEY_SPIELBERICHT_URL = "BerichtUrl";
 
 	
 
@@ -104,12 +105,12 @@ public class SpielplanPullParser {
 							// if </name> use setName() on curSite
 							curStackSite.setGast(curText);
 					}
-				
-
-			
+					 else if (tagname.equalsIgnoreCase(KEY_SPIELBERICHT_URL)) {
+							// if </name> use setName() on curSite
+							curStackSite.setSpielberichtURL(curText);
+					}
 
 					break;
-
 				default:
 					break;
 				}

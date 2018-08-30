@@ -10,7 +10,8 @@ public class ErgebnisLetzteWoche {
 	String VereinGast;
 	String ToreHeim;
 	String ToreGast;
-	
+	String SpielberichtURL;
+
 	
 	public String getLiga() {
 		return Liga;
@@ -48,8 +49,10 @@ public class ErgebnisLetzteWoche {
 	public void setToreGast(String toreGast) {
 		ToreGast = toreGast;
 	}
-
-	
-	
-	
+	public String getSpielberichtURL() {
+		return SpielberichtURL;
+	}
+	public void setSpielberichtURL(String spielberichtURL) {
+		SpielberichtURL = spielberichtURL;
+	}
 }

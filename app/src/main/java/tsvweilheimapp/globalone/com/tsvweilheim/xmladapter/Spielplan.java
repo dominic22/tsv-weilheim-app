@@ -6,6 +6,8 @@ public class Spielplan {
 	String Uhrzeit;
 	String Heim;
 	String Gast;
+	String SpielberichtURL;
+
 	public String getDatum() {
 		return Datum;
 	}
@@ -30,7 +32,10 @@ public class Spielplan {
 	public void setGast(String gast) {
 		Gast = gast;
 	}
-	
-	
-	
+	public String getSpielberichtURL() {
+		return SpielberichtURL;
+	}
+	public void setSpielberichtURL(String spielberichtURL) {
+		SpielberichtURL = spielberichtURL;
+	}
 }

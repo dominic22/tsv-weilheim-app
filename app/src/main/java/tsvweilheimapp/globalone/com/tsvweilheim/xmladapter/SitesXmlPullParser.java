@@ -21,6 +21,7 @@ public class SitesXmlPullParser {
 	static final String KEY_VEREINGAST = "VereinGast";
 	static final String KEY_TOREHEIM = "ToreHeim";
 	static final String KEY_TOREGAST = "ToreGast";
+	static final String KEY_SPIELBERICHT_URL = "BerichtUrl";
 
 	// Tabelle
 	static final String KEY_TABELLE = "TabelleUngerade";
@@ -144,6 +145,9 @@ public class SitesXmlPullParser {
 					} else if (tagname.equalsIgnoreCase(KEY_TOREGAST)) {
 						// if </name> use setName() on curSite
 						curStackSite.setToreGast(curText);
+					} else if (tagname.equalsIgnoreCase(KEY_SPIELBERICHT_URL)) {
+						// if </name> use setName() on curSite
+						curStackSite.setSpielberichtURL(curText);
 					}
 
 					// Tabelle

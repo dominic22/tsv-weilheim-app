@@ -32,6 +32,8 @@ public class ScheduleFragment extends Fragment {
     private TableRow tableRowLetzteWoche;
     static private SpielplanAdapter mAdapter;
     String SpielplanURL = "";
+    private static DialogHandler dialogHandler;
+    private static String strSpielberichtURL;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +44,8 @@ public class ScheduleFragment extends Fragment {
         String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
         SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=" + receivedMannschaft + "&type=table";
+
+        dialogHandler = new DialogHandler(this.getContext());
 
         /*
          * If network is available download the xml from the Internet. If not
@@ -236,6 +240,8 @@ public class ScheduleFragment extends Fragment {
             boolean fail = false;
 
             tableRowLetzteWoche = new TableRow(getActivity().getApplicationContext());
+
+
             tableRowLetzteWoche.setGravity(Gravity.CENTER);
             if (i == 0 || i % 2 == 0)
                 tableRowLetzteWoche.setBackgroundResource(R.color.White);
@@ -246,6 +252,15 @@ public class ScheduleFragment extends Fragment {
             String strUhrzeit = stacks.getUhrzeit();
             String strVereinHeim = stacks.getHeim();
             String strVereinGast = stacks.getGast();
+            strSpielberichtURL = stacks.getSpielberichtURL();
+
+            tableRowLetzteWoche.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                dialogHandler.showDialog(strSpielberichtURL);
+                }
+            });
 
             strVereinHeim = splitString(strVereinHeim);
             strVereinGast = splitString(strVereinGast);
@@ -299,5 +314,4 @@ public class ScheduleFragment extends Fragment {
 
         }
     }
-
 }

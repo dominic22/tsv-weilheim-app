@@ -1,7 +1,6 @@
 package tsvweilheimapp.globalone.com.tsvweilheim.viewswitcher;
 
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -41,6 +40,7 @@ public class ScoreFragment extends Fragment {
     private String UrlLetzteWoche = "";
     private String UrlTabelle = "";
     private static DialogHandler dialogHandler;
+    private static String strSpielberichtURL;
 
     private SitesAdapter mAdapter;
     private SitesAdapter mAdapterLetzteWoche;
@@ -391,20 +391,26 @@ public class ScoreFragment extends Fragment {
 
         for (int i = 0; i < mAdapter.getCount(); i++) {
             StackSite stacks = mAdapter.getItem(i);
-            boolean fail = false;
 
             tableLayout.setStretchAllColumns(true);
             tableLayout.setShrinkAllColumns(true);
 
-            tableRowLetzteWoche = new TableRow(getActivity()
-                    .getApplicationContext());
+            tableRowLetzteWoche = new TableRow(getActivity().getApplicationContext());
+
+            strSpielberichtURL = stacks.getSpielberichtURL();
+            tableRowLetzteWoche.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                dialogHandler.showDialog(strSpielberichtURL);
+                }
+            });
+
             tableRowLetzteWoche.setGravity(Gravity.CENTER);
             if (i == 0 || i % 2 == 0)
                 tableRowLetzteWoche.setBackgroundResource(R.color.White);
             else
                 tableRowLetzteWoche.setBackgroundResource(R.color.LightGrey);
-            // GEHT
-            // txtContent.setText(stackS.getVerein());
 
             String strLiga = stacks.getLiga();
             String strDatum = stacks.getDatum();
@@ -574,14 +580,6 @@ public class ScoreFragment extends Fragment {
             tableLayout.setShrinkAllColumns(true);
 
             tableRow = new TableRow(getActivity().getApplicationContext());
-            tableRow.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    // TODO Auto-generated method stub
-                    dialogHandler.showDialog();
-                }
-            });
 
             tableRow.setGravity(Gravity.CENTER);
             if (i == 0 || i % 2 == 0)

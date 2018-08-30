@@ -5,15 +5,15 @@ package tsvweilheimapp.globalone.com.tsvweilheim.xmladapter;
  * Data object that holds all of our information about a StackExchange Site.
  */
 public class StackSite {
-	
 	String Liga;
 	String Datum;
 	String VereinHeim;
 	String VereinGast;
 	String ToreHeim;
 	String ToreGast;
-	
-	
+	String SpielberichtURL;
+
+
 	public String getLiga() {
 		return Liga;
 	}
@@ -50,7 +50,12 @@ public class StackSite {
 	public void setToreGast(String toreGast) {
 		ToreGast = toreGast;
 	}
-
+	public String getSpielberichtURL() {
+		return SpielberichtURL;
+	}
+	public void setSpielberichtURL(String spielberichtURL) {
+		SpielberichtURL = spielberichtURL;
+	}
 	
 	
 	
