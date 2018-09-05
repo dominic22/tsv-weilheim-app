@@ -36,7 +36,7 @@ public class YouthTeamsFragment extends Fragment implements View.OnClickListener
         btnBM.setOnClickListener(this);
         btnBW.setOnClickListener(this);
         btnCM.setOnClickListener(this);
-        btnCM.setOnClickListener(this);
+        btnCW.setOnClickListener(this);
         btnDM.setOnClickListener(this);
         btnDW.setOnClickListener(this);
 
