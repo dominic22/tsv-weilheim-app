@@ -1,17 +1,22 @@
 package tsvweilheimapp.globalone.com.tsvweilheim.viewswitcher;
 
+import android.app.DownloadManager;
 import android.content.Context;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -32,8 +37,22 @@ public class ScheduleFragment extends Fragment {
     private TableRow tableRowLetzteWoche;
     static private SpielplanAdapter mAdapter;
     String SpielplanURL = "";
+    String receivedMannschaft = "";
     private static DialogHandler dialogHandler;
     private static String strSpielberichtURL;
+    Button downloadBtn;
+    DownloadManager downloadManager;
+    /**
+     * @param context used to check the device version and DownloadManager information
+     * @return true if the download manager is available
+     */
+    public static boolean isDownloadManagerAvailable(Context context) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+            return true;
+        }
+        return false;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,9 +60,43 @@ public class ScheduleFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.layout_spielerg, container, false);
         tableLayoutLetzteWoche = rootView.findViewById(R.id.tableSpielergebnis);
-        String receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
+        receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
         SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=" + receivedMannschaft + "&type=table";
+        downloadManager = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
+        downloadBtn = rootView.findViewById(R.id.download_schedule_btn);
+        downloadBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                String url = "http://android.handball-weilheim.de/webhandball/calendar.php?site=" + receivedMannschaft;
+                String filename = getFileName();
+//                DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
+//                request.setDescription("Bitte warten, der Spielplan wird heruntergeladen...");
+//                request.setTitle("Spielplan herunterladen");
+                // in order for this if to run, you must use the android 3.2 to compile your app
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+//                    request.allowScanningByMediaScanner();
+//                    request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+//                }
+//                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename + ".ics");
+//
+//                // get download service and enqueue file
+//                DownloadManager manager = (DownloadManager) v.getAct().getSystemService(Context.DOWNLOAD_SERVICE);
+//                manager.enqueue(request);
+
+                DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
+                request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
+                request.setAllowedOverRoaming(false);
+                request.setDescription("Bitte warten, der Spielplan wird heruntergeladen...");
+                request.setTitle("Spielplan herunterladen");
+                request.setVisibleInDownloadsUi(true);
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename + ".ics");
+
+                downloadManager.enqueue(request);
+            }
+        });
+
 
         dialogHandler = new DialogHandler(this.getContext());
 
@@ -64,6 +117,40 @@ public class ScheduleFragment extends Fragment {
         }
 
         return rootView;
+    }
+
+    private String getFileName() {
+        if (receivedMannschaft.equals("erste")) {
+            return "spielplan_herren1";
+        } else if (receivedMannschaft.equals("zweite")) {
+            return "spielplan_herren2";
+        } else if (receivedMannschaft.equals("damen")) {
+            return "spielplan_damen1";
+        } else if (receivedMannschaft.equals("damen2")) {
+            return "spielplan_damen2";
+        } else if (receivedMannschaft.equals("js")) {
+            return "spielplan_js";
+        } else if (receivedMannschaft.equals("ad")) {
+            return "spielplan_ad";
+        } else if (receivedMannschaft.equals("a_maennlich")) {
+            return "spielplan_a_weiblich";
+        } else if (receivedMannschaft.equals("a_weiblich")) {
+            return "spielplan_a_maennlich";
+        } else if (receivedMannschaft.equals("b_maennlich")) {
+            return "spielplan_b_maennlich";
+        } else if (receivedMannschaft.equals("b_weiblich")) {
+            return "spielplan_b_weiblich";
+        } else if (receivedMannschaft.equals("c_maennlich")) {
+            return "spielplan_c_maennlich";
+        } else if (receivedMannschaft.equals("c_weiblich")) {
+            return "spielplan_c_weiblich";
+        } else if (receivedMannschaft.equals("d_maennlich")) {
+            return "spielplan_d_maennlich";
+        } else if (receivedMannschaft.equals("d_weiblich")) {
+            return "spielplan_d_weiblich";
+        } else {
+            return "unknown";
+        }
     }
 
     public boolean isNetworkAvailable() {

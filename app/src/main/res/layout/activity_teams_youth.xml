@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:background="@color/Red"
@@ -17,7 +18,20 @@
             android:layout_gravity="center_vertical"
             android:orientation="vertical"
             android:paddingTop="@dimen/padding_top_team_frame"
-            android:weightSum="9">
+            android:weightSum="13">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/berthi_ball" />
+
+        </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

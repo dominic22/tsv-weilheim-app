@@ -8,6 +8,6 @@
     
      <dimen name="text_size11">8dp</dimen>
 	<dimen name="text_header">10dp</dimen>
-    <dimen name="padding_top_team_frame">290dp</dimen>
+    <dimen name="padding_top_team_frame">450dp</dimen>
 
 </resources>
