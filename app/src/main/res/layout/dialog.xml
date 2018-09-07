@@ -50,7 +50,7 @@
                 android:layout_marginBottom="10dip"
                 android:layout_weight="5"
                 android:height="50dip"
-                android:background="#777777"
+                android:background="#555555"
                 android:text="Zurück"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#fff" />

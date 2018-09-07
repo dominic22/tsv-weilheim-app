@@ -31,6 +31,8 @@ import tsvweilheimapp.globalone.com.tsvweilheim.xmladapter.SpielplanPullParser;
 
 import java.io.FileNotFoundException;
 
+import static android.content.Context.DOWNLOAD_SERVICE;
+
 public class ScheduleFragment extends Fragment {
     private static final int TopBottomMargin = 32;
     private TableLayout tableLayoutLetzteWoche;
@@ -63,36 +65,28 @@ public class ScheduleFragment extends Fragment {
         receivedMannschaft = getActivity().getIntent().getStringExtra("Mannschaft");
 
         SpielplanURL = "http://android.handball-weilheim.de/webhandball/spielplancutout.php?site=" + receivedMannschaft + "&type=table";
-        downloadManager = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
+        downloadManager = (DownloadManager) getActivity().getSystemService(DOWNLOAD_SERVICE);
         downloadBtn = rootView.findViewById(R.id.download_schedule_btn);
+
         downloadBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 String url = "http://android.handball-weilheim.de/webhandball/calendar.php?site=" + receivedMannschaft;
                 String filename = getFileName();
-//                DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-//                request.setDescription("Bitte warten, der Spielplan wird heruntergeladen...");
-//                request.setTitle("Spielplan herunterladen");
-                // in order for this if to run, you must use the android 3.2 to compile your app
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-//                    request.allowScanningByMediaScanner();
-//                    request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-//                }
-//                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename + ".ics");
-//
-//                // get download service and enqueue file
-//                DownloadManager manager = (DownloadManager) v.getAct().getSystemService(Context.DOWNLOAD_SERVICE);
-//                manager.enqueue(request);
-
+                // Create request for android download manager
+                downloadManager = (DownloadManager)getActivity().getSystemService(DOWNLOAD_SERVICE);
                 DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-                request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
-                request.setAllowedOverRoaming(false);
-                request.setDescription("Bitte warten, der Spielplan wird heruntergeladen...");
-                request.setTitle("Spielplan herunterladen");
-                request.setVisibleInDownloadsUi(true);
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename + ".ics");
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                    request.allowScanningByMediaScanner();
+                    request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                }
+                request.setTitle(filename);
+                request.setDescription("Bitte warten, der Spielplan " + filename + "wird heruntergeladen...");
 
+                //Set the local destination for the downloaded file to a path within the application's external files directory
+                request.setDestinationInExternalFilesDir(v.getContext(), Environment.DIRECTORY_DOWNLOADS, filename + ".ics");
+                //Enqueue download and save into referenceId
                 downloadManager.enqueue(request);
             }
         });
