@@ -40,8 +40,7 @@ public class ScheduleFragment extends Fragment {
     static private SpielplanAdapter mAdapter;
     String SpielplanURL = "";
     String receivedMannschaft = "";
-    private static DialogHandler dialogHandler;
-    private static String strSpielberichtURL;
+    private DialogHandler dialogHandler;
     Button downloadBtn;
     DownloadManager downloadManager;
     /**
@@ -333,15 +332,9 @@ public class ScheduleFragment extends Fragment {
             String strUhrzeit = stacks.getUhrzeit();
             String strVereinHeim = stacks.getHeim();
             String strVereinGast = stacks.getGast();
-            strSpielberichtURL = stacks.getSpielberichtURL();
+            String strSpielberichtURL = stacks.getSpielberichtURL();
 
-            tableRowLetzteWoche.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                dialogHandler.showDialog(strSpielberichtURL);
-                }
-            });
+            tableRowLetzteWoche.setOnClickListener(new TableClickListener(dialogHandler, strSpielberichtURL));
 
             strVereinHeim = splitString(strVereinHeim);
             strVereinGast = splitString(strVereinGast);

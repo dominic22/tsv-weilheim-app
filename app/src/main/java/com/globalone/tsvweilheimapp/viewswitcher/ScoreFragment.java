@@ -398,13 +398,7 @@ public class ScoreFragment extends Fragment {
             tableRowLetzteWoche = new TableRow(getActivity().getApplicationContext());
 
             strSpielberichtURL = stacks.getSpielberichtURL();
-            tableRowLetzteWoche.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                dialogHandler.showDialog(strSpielberichtURL);
-                }
-            });
+            tableRowLetzteWoche.setOnClickListener(new TableClickListener(dialogHandler, strSpielberichtURL));
 
             tableRowLetzteWoche.setGravity(Gravity.CENTER);
             if (i == 0 || i % 2 == 0)

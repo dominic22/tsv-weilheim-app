@@ -32,7 +32,7 @@ public class ShowOrgaActivity extends Activity {
             this.getActionBar().setTitle("TSV Weilheim - Wirtschaftsasschuss");
         } else if (receivedParameter.equals("foerderverein")) {
             webView.loadUrl(baseUrl + "fv");
-            this.getActionBar().setTitle("TSV Weilheim - F�rderverein");
+            this.getActionBar().setTitle("TSV Weilheim - Förderverein");
         }
     }
 
