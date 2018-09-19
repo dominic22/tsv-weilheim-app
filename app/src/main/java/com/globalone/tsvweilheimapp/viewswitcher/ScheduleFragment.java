@@ -126,9 +126,9 @@ public class ScheduleFragment extends Fragment {
         } else if (receivedMannschaft.equals("ad")) {
             return "spielplan_ad";
         } else if (receivedMannschaft.equals("a_maennlich")) {
-            return "spielplan_a_weiblich";
-        } else if (receivedMannschaft.equals("a_weiblich")) {
             return "spielplan_a_maennlich";
+        } else if (receivedMannschaft.equals("a_weiblich")) {
+            return "spielplan_a_weiblich";
         } else if (receivedMannschaft.equals("b_maennlich")) {
             return "spielplan_b_maennlich";
         } else if (receivedMannschaft.equals("b_weiblich")) {
